@@ -21,7 +21,7 @@
       "options": "Preventive\nDetective\nCorrective"
     },
     {
-      "fieldname": "control_process",
+      "fieldname": "process",
       "label": "Process",
       "fieldtype": "Data"
     },
