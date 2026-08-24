@@ -15,7 +15,7 @@
       "reqd": 1
     },
     {
-      "fieldname": "process",
+      "fieldname": "risk_process",
       "label": "Process",
       "fieldtype": "Data"
     },
