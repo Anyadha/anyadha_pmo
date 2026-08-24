@@ -1,0 +1,191 @@
+{
+  "actions": [],
+  "allow_rename": 0,
+  "autoname": "naming_series:",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "action_title",
+    "action_description",
+    "source_type",
+    "source_doctype",
+    "source_document",
+    "company",
+    "project",
+    "program",
+    "assigned_to",
+    "assigned_by",
+    "priority",
+    "assigned_date",
+    "due_date",
+    "status",
+    "completion_percent",
+    "verification_required",
+    "verified_by",
+    "verification_date",
+    "closure_date",
+    "evidence"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "label": "Action ID",
+      "fieldtype": "Select",
+      "options": "ACT-.YYYY.-.#####",
+      "reqd": 1,
+      "hidden": 1
+    },
+    {
+      "fieldname": "action_title",
+      "label": "Action Title",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "action_description",
+      "label": "Action Description",
+      "fieldtype": "Text Editor",
+      "reqd": 1
+    },
+    {
+      "fieldname": "source_type",
+      "label": "Source Type",
+      "fieldtype": "Select",
+      "options": "Project\nProgram\nBoard Meeting\nManagement Review\nRisk\nAudit\nCompliance\nM&E\nGrant\nCSR\nSOP Review\nOther",
+      "reqd": 1
+    },
+    {
+      "fieldname": "source_doctype",
+      "label": "Source DocType",
+      "fieldtype": "Link",
+      "options": "DocType"
+    },
+    {
+      "fieldname": "source_document",
+      "label": "Source Document",
+      "fieldtype": "Dynamic Link",
+      "options": "source_doctype"
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "project",
+      "label": "Project",
+      "fieldtype": "Link",
+      "options": "PMO Project"
+    },
+    {
+      "fieldname": "program",
+      "label": "Program",
+      "fieldtype": "Link",
+      "options": "PMO Program"
+    },
+    {
+      "fieldname": "assigned_to",
+      "label": "Assigned To",
+      "fieldtype": "Link",
+      "options": "Employee",
+      "reqd": 1
+    },
+    {
+      "fieldname": "assigned_by",
+      "label": "Assigned By",
+      "fieldtype": "Link",
+      "options": "Employee",
+      "reqd": 1
+    },
+    {
+      "fieldname": "priority",
+      "label": "Priority",
+      "fieldtype": "Select",
+      "options": "Low\nMedium\nHigh\nCritical",
+      "default": "Medium"
+    },
+    {
+      "fieldname": "assigned_date",
+      "label": "Assigned Date",
+      "fieldtype": "Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "due_date",
+      "label": "Due Date",
+      "fieldtype": "Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Open\nAssigned\nIn Progress\nPending Verification\nCompleted\nClosed\nOverdue\nCancelled",
+      "default": "Open"
+    },
+    {
+      "fieldname": "completion_percent",
+      "label": "Completion %",
+      "fieldtype": "Percent",
+      "default": 0
+    },
+    {
+      "fieldname": "verification_required",
+      "label": "Verification Required",
+      "fieldtype": "Check"
+    },
+    {
+      "fieldname": "verified_by",
+      "label": "Verified By",
+      "fieldtype": "Link",
+      "options": "Employee"
+    },
+    {
+      "fieldname": "verification_date",
+      "label": "Verification Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "closure_date",
+      "label": "Closure Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "evidence",
+      "label": "Evidence",
+      "fieldtype": "Attach"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "issingle": 0,
+  "istable": 0,
+  "module": "Project Management",
+  "name": "PMO Action Item",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1,
+  "track_seen": 1,
+  "title_field": "action_title",
+  "is_submittable": 1
+}

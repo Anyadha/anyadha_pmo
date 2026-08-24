@@ -1,0 +1,129 @@
+{
+  "actions": [],
+  "allow_rename": 0,
+  "autoname": "naming_series:",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "project",
+    "milestone_name",
+    "milestone_type",
+    "planned_start",
+    "planned_end",
+    "responsible_person",
+    "weightage",
+    "completion_percent",
+    "status",
+    "deliverable",
+    "evidence"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "label": "Milestone ID",
+      "fieldtype": "Select",
+      "options": "MILE-.YYYY.-.#####",
+      "reqd": 1,
+      "hidden": 1
+    },
+    {
+      "fieldname": "project",
+      "label": "Project",
+      "fieldtype": "Link",
+      "options": "PMO Project",
+      "reqd": 1
+    },
+    {
+      "fieldname": "milestone_name",
+      "label": "Milestone Name",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "milestone_type",
+      "label": "Milestone Type",
+      "fieldtype": "Select",
+      "options": "Deliverable\nFinancial\nProcurement\nM&E\nTraining\nImplementation\nOther",
+      "reqd": 1
+    },
+    {
+      "fieldname": "planned_start",
+      "label": "Planned Start",
+      "fieldtype": "Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "planned_end",
+      "label": "Planned End",
+      "fieldtype": "Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "responsible_person",
+      "label": "Responsible Person",
+      "fieldtype": "Link",
+      "options": "Employee",
+      "reqd": 1
+    },
+    {
+      "fieldname": "weightage",
+      "label": "Weightage",
+      "fieldtype": "Percent",
+      "default": 0
+    },
+    {
+      "fieldname": "completion_percent",
+      "label": "Completion %",
+      "fieldtype": "Percent",
+      "default": 0
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Not Started\nIn Progress\nAt Risk\nDelayed\nCompleted\nAccepted\nCancelled",
+      "default": "Not Started"
+    },
+    {
+      "fieldname": "deliverable",
+      "label": "Deliverable",
+      "fieldtype": "Text Editor",
+      "reqd": 1
+    },
+    {
+      "fieldname": "evidence",
+      "label": "Evidence",
+      "fieldtype": "Attach"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "issingle": 0,
+  "istable": 0,
+  "module": "Project Management",
+  "name": "PMO Project Milestone",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1,
+  "track_seen": 1,
+  "title_field": "milestone_name",
+  "is_submittable": 1
+}

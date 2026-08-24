@@ -1,0 +1,190 @@
+{
+  "actions": [],
+  "allow_rename": 0,
+  "autoname": "naming_series:",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "company",
+    "program",
+    "project",
+    "risk_category",
+    "risk_type",
+    "risk_title",
+    "risk_description",
+    "risk_owner",
+    "likelihood",
+    "impact",
+    "inherent_risk",
+    "treatment_strategy",
+    "treatment_plan",
+    "residual_likelihood",
+    "residual_impact",
+    "residual_risk",
+    "status",
+    "last_review_date",
+    "next_review_date"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "label": "Risk ID",
+      "fieldtype": "Select",
+      "options": "RISK-.YYYY.-.#####",
+      "reqd": 1,
+      "hidden": 1
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "program",
+      "label": "Program",
+      "fieldtype": "Link",
+      "options": "PMO Program"
+    },
+    {
+      "fieldname": "project",
+      "label": "Project",
+      "fieldtype": "Link",
+      "options": "PMO Project"
+    },
+    {
+      "fieldname": "risk_category",
+      "label": "Risk Category",
+      "fieldtype": "Link",
+      "options": "PMO Risk Category",
+      "reqd": 1
+    },
+    {
+      "fieldname": "risk_type",
+      "label": "Risk Type",
+      "fieldtype": "Select",
+      "options": "Strategic\nFinancial\nOperational\nProject\nCompliance\nLegal\nReputational\nSafety\nTechnology\nOther",
+      "reqd": 1
+    },
+    {
+      "fieldname": "risk_title",
+      "label": "Risk Title",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "risk_description",
+      "label": "Risk Description",
+      "fieldtype": "Text Editor",
+      "reqd": 1
+    },
+    {
+      "fieldname": "risk_owner",
+      "label": "Risk Owner",
+      "fieldtype": "Link",
+      "options": "Employee",
+      "reqd": 1
+    },
+    {
+      "fieldname": "likelihood",
+      "label": "Likelihood",
+      "fieldtype": "Select",
+      "options": "1\n2\n3\n4\n5",
+      "reqd": 1
+    },
+    {
+      "fieldname": "impact",
+      "label": "Impact",
+      "fieldtype": "Select",
+      "options": "1\n2\n3\n4\n5",
+      "reqd": 1
+    },
+    {
+      "fieldname": "inherent_risk",
+      "label": "Inherent Risk",
+      "fieldtype": "Select",
+      "options": "Low\nMedium\nHigh\nCritical",
+      "read_only": 1
+    },
+    {
+      "fieldname": "treatment_strategy",
+      "label": "Treatment Strategy",
+      "fieldtype": "Select",
+      "options": "Avoid\nReduce\nTransfer\nAccept\nExploit",
+      "reqd": 1
+    },
+    {
+      "fieldname": "treatment_plan",
+      "label": "Treatment Plan",
+      "fieldtype": "Text Editor",
+      "reqd": 1
+    },
+    {
+      "fieldname": "residual_likelihood",
+      "label": "Residual Likelihood",
+      "fieldtype": "Select",
+      "options": "1\n2\n3\n4\n5"
+    },
+    {
+      "fieldname": "residual_impact",
+      "label": "Residual Impact",
+      "fieldtype": "Select",
+      "options": "1\n2\n3\n4\n5"
+    },
+    {
+      "fieldname": "residual_risk",
+      "label": "Residual Risk",
+      "fieldtype": "Select",
+      "options": "Low\nMedium\nHigh\nCritical",
+      "read_only": 1
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Identified\nAssessed\nTreatment Planned\nUnder Monitoring\nMitigated\nClosed\nAccepted",
+      "default": "Identified"
+    },
+    {
+      "fieldname": "last_review_date",
+      "label": "Last Review Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "next_review_date",
+      "label": "Next Review Date",
+      "fieldtype": "Date"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "issingle": 0,
+  "istable": 0,
+  "module": "Project Management",
+  "name": "PMO Risk",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1,
+  "track_seen": 1,
+  "title_field": "risk_title",
+  "is_submittable": 1
+}

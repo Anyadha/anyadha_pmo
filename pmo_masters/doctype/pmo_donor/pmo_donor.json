@@ -1,0 +1,68 @@
+{
+  "actions": [],
+  "allow_rename": 0,
+  "autoname": "naming_series:",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "donor_name",
+    "description",
+    "is_active"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "label": "Donor ID",
+      "fieldtype": "Select",
+      "options": "DON-.#####",
+      "reqd": 1,
+      "hidden": 1
+    },
+    {
+      "fieldname": "donor_name",
+      "label": "Donor",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "description",
+      "label": "Description",
+      "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "is_active",
+      "label": "Is Active",
+      "fieldtype": "Check",
+      "default": 1
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "issingle": 0,
+  "istable": 0,
+  "module": "Pmo Masters",
+  "name": "PMO Donor",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 0,
+      "cancel": 0,
+      "amend": 0,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1,
+  "track_seen": 1,
+  "title_field": "donor_name"
+}

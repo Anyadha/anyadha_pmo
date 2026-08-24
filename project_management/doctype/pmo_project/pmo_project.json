@@ -1,0 +1,266 @@
+{
+  "actions": [],
+  "allow_rename": 0,
+  "autoname": "naming_series:",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "project_name",
+    "erpnext_project",
+    "company",
+    "program",
+    "project_type",
+    "project_category",
+    "project_manager",
+    "department",
+    "cost_center",
+    "funding_source",
+    "donor",
+    "customer",
+    "approved_budget",
+    "planned_start_date",
+    "planned_end_date",
+    "actual_start_date",
+    "actual_end_date",
+    "project_status",
+    "approval_status",
+    "project_priority",
+    "overall_risk_rating",
+    "strategic_objective",
+    "target_beneficiaries",
+    "geographic_area",
+    "intervention_type",
+    "project_health",
+    "physical_progress",
+    "financial_progress",
+    "overall_progress",
+    "remarks"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "label": "Project ID",
+      "fieldtype": "Select",
+      "options": "PROJ-.YYYY.-.#####",
+      "reqd": 1,
+      "hidden": 1
+    },
+    {
+      "fieldname": "project_name",
+      "label": "Project Name",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "erpnext_project",
+      "label": "ERPNext Project",
+      "fieldtype": "Link",
+      "options": "Project",
+      "reqd": 1
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "program",
+      "label": "Program",
+      "fieldtype": "Link",
+      "options": "PMO Program"
+    },
+    {
+      "fieldname": "project_type",
+      "label": "Project Type",
+      "fieldtype": "Link",
+      "options": "PMO Project Type",
+      "reqd": 1
+    },
+    {
+      "fieldname": "project_category",
+      "label": "Project Category",
+      "fieldtype": "Link",
+      "options": "PMO Project Category"
+    },
+    {
+      "fieldname": "project_manager",
+      "label": "Project Manager",
+      "fieldtype": "Link",
+      "options": "Employee",
+      "reqd": 1
+    },
+    {
+      "fieldname": "department",
+      "label": "Department",
+      "fieldtype": "Link",
+      "options": "Department",
+      "reqd": 1
+    },
+    {
+      "fieldname": "cost_center",
+      "label": "Cost Center",
+      "fieldtype": "Link",
+      "options": "Cost Center",
+      "reqd": 1
+    },
+    {
+      "fieldname": "funding_source",
+      "label": "Funding Source",
+      "fieldtype": "Link",
+      "options": "PMO Funding Source"
+    },
+    {
+      "fieldname": "donor",
+      "label": "Donor",
+      "fieldtype": "Link",
+      "options": "PMO Donor"
+    },
+    {
+      "fieldname": "customer",
+      "label": "Customer",
+      "fieldtype": "Link",
+      "options": "Customer"
+    },
+    {
+      "fieldname": "approved_budget",
+      "label": "Approved Budget",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "planned_start_date",
+      "label": "Planned Start Date",
+      "fieldtype": "Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "planned_end_date",
+      "label": "Planned End Date",
+      "fieldtype": "Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "actual_start_date",
+      "label": "Actual Start Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "actual_end_date",
+      "label": "Actual End Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "project_status",
+      "label": "Project Status",
+      "fieldtype": "Select",
+      "options": "Draft\nUnder Approval\nApproved\nInitiated\nActive\nOn Hold\nCompleted\nUnder Closure\nClosed\nCancelled",
+      "default": "Draft",
+      "reqd": 1
+    },
+    {
+      "fieldname": "approval_status",
+      "label": "Approval Status",
+      "fieldtype": "Select",
+      "options": "Not Submitted\nPending Review\nApproved\nRejected",
+      "default": "Not Submitted"
+    },
+    {
+      "fieldname": "project_priority",
+      "label": "Project Priority",
+      "fieldtype": "Select",
+      "options": "Low\nMedium\nHigh\nCritical",
+      "default": "Medium"
+    },
+    {
+      "fieldname": "overall_risk_rating",
+      "label": "Overall Risk Rating",
+      "fieldtype": "Select",
+      "options": "Low\nMedium\nHigh\nCritical",
+      "default": "Low"
+    },
+    {
+      "fieldname": "strategic_objective",
+      "label": "Strategic Objective",
+      "fieldtype": "Link",
+      "options": "PMO Strategic Objective"
+    },
+    {
+      "fieldname": "target_beneficiaries",
+      "label": "Target Beneficiaries",
+      "fieldtype": "Int"
+    },
+    {
+      "fieldname": "geographic_area",
+      "label": "Geographic Area",
+      "fieldtype": "Link",
+      "options": "PMO Geographic Area"
+    },
+    {
+      "fieldname": "intervention_type",
+      "label": "Intervention Type",
+      "fieldtype": "Link",
+      "options": "PMO Intervention Type"
+    },
+    {
+      "fieldname": "project_health",
+      "label": "Project Health",
+      "fieldtype": "Select",
+      "options": "Green\nAmber\nRed",
+      "default": "Green"
+    },
+    {
+      "fieldname": "physical_progress",
+      "label": "Physical Progress %",
+      "fieldtype": "Percent",
+      "default": 0
+    },
+    {
+      "fieldname": "financial_progress",
+      "label": "Financial Progress %",
+      "fieldtype": "Percent",
+      "default": 0
+    },
+    {
+      "fieldname": "overall_progress",
+      "label": "Overall Progress %",
+      "fieldtype": "Percent",
+      "default": 0
+    },
+    {
+      "fieldname": "remarks",
+      "label": "Remarks",
+      "fieldtype": "Small Text"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "issingle": 0,
+  "istable": 0,
+  "module": "Project Management",
+  "name": "PMO Project",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1,
+      "report": 1,
+      "export": 1,
+      "print": 1,
+      "email": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1,
+  "track_seen": 1,
+  "title_field": "project_name",
+  "is_submittable": 1
+}

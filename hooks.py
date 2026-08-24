@@ -1,0 +1,6 @@
+app_name = "anyadha_pmo"
+app_title = "Anyadha PMO"
+app_publisher = "Anyadha"
+app_description = "Enterprise Project Management, Governance, M&E, Grants, Compliance and MIS"
+app_email = "info@anyadha.com"
+app_license = "MIT"
