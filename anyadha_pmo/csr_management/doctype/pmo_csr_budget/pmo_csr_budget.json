@@ -1,0 +1,96 @@
+{
+  "doctype": "DocType",
+  "name": "PMO CSR Budget",
+  "module": "CSR Management",
+  "custom": 0,
+  "istable": 0,
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "csr_project",
+      "label": "CSR Project",
+      "fieldtype": "Link",
+      "options": "PMO CSR Project",
+      "reqd": 1
+    },
+    {
+      "fieldname": "budget_head",
+      "label": "Budget Head",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "approved_amount",
+      "label": "Approved Amount",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "utilized_amount",
+      "label": "Utilized Amount",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "variance",
+      "label": "Variance",
+      "fieldtype": "Currency"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "PMO Administrator",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "PMO Head",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "CSR Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "Programme Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 1
+    }
+  ]
+}

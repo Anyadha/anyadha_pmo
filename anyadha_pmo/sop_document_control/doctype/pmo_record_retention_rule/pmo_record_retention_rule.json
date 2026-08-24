@@ -1,0 +1,93 @@
+{
+  "doctype": "DocType",
+  "name": "PMO Record Retention Rule",
+  "module": "SOP & Document Control",
+  "custom": 0,
+  "istable": 0,
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "document_type",
+      "label": "Document Type",
+      "fieldtype": "Link",
+      "options": "PMO Document Type",
+      "reqd": 1
+    },
+    {
+      "fieldname": "retention_years",
+      "label": "Retention Years",
+      "fieldtype": "Int",
+      "reqd": 1
+    },
+    {
+      "fieldname": "disposal_method",
+      "label": "Disposal Method",
+      "fieldtype": "Select",
+      "options": "Secure Delete\nArchive\nPermanent Retention"
+    },
+    {
+      "fieldname": "legal_basis",
+      "label": "Legal Basis",
+      "fieldtype": "Small Text"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "PMO Administrator",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "PMO Head",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "Compliance Officer",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "PMO Officer",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 1
+    }
+  ]
+}

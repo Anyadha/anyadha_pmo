@@ -1,0 +1,102 @@
+{
+  "doctype": "DocType",
+  "name": "PMO Risk Assessment",
+  "module": "Risk & Internal Controls",
+  "custom": 0,
+  "istable": 0,
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "risk",
+      "label": "Risk",
+      "fieldtype": "Link",
+      "options": "PMO Enterprise Risk",
+      "reqd": 1
+    },
+    {
+      "fieldname": "assessment_date",
+      "label": "Assessment Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "inherent_score",
+      "label": "Inherent Score",
+      "fieldtype": "Float"
+    },
+    {
+      "fieldname": "residual_score",
+      "label": "Residual Score",
+      "fieldtype": "Float"
+    },
+    {
+      "fieldname": "assessor",
+      "label": "Assessor",
+      "fieldtype": "Link",
+      "options": "Employee"
+    },
+    {
+      "fieldname": "remarks",
+      "label": "Remarks",
+      "fieldtype": "Small Text"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "PMO Administrator",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "PMO Head",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "Compliance Officer",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "Internal Auditor",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 1
+    }
+  ]
+}

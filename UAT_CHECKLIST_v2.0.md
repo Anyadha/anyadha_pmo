@@ -1,0 +1,24 @@
+# Anyadha PMO v2.0 UAT Checklist
+
+- App installs on ERPNext v16 site
+- All modules load
+- All DocTypes load
+- Create/edit/save each master
+- Create project/programme records
+- Link native ERPNext Project
+- Test milestones/issues/risks/actions/change requests
+- Test proposal/DPR lifecycle
+- Test baseline/indicator/target/monitoring/evaluation
+- Test grant/agreement/utilization/reporting
+- Test CSR lifecycle
+- Test compliance calendar/register
+- Test risk/control/action
+- Test audit/finding/action/closure
+- Test SOP/document/version/review
+- Test KPI/reading/MIS snapshot
+- Test role permissions
+- Test workflows/approvals
+- Test attachments/evidence
+- Test migration
+- Test backup/restore procedure
+- Test no duplicate ERPNext transaction records

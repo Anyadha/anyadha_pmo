@@ -1,0 +1,123 @@
+{
+  "doctype": "DocType",
+  "name": "PMO Theory of Change",
+  "module": "Monitoring & Evaluation",
+  "custom": 0,
+  "istable": 0,
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "framework",
+      "label": "M&E Framework",
+      "fieldtype": "Link",
+      "options": "PMO M&E Framework",
+      "reqd": 1
+    },
+    {
+      "fieldname": "inputs",
+      "label": "Inputs",
+      "fieldtype": "Text Editor"
+    },
+    {
+      "fieldname": "activities",
+      "label": "Activities",
+      "fieldtype": "Text Editor"
+    },
+    {
+      "fieldname": "outputs",
+      "label": "Outputs",
+      "fieldtype": "Text Editor"
+    },
+    {
+      "fieldname": "outcomes",
+      "label": "Outcomes",
+      "fieldtype": "Text Editor"
+    },
+    {
+      "fieldname": "impact",
+      "label": "Impact",
+      "fieldtype": "Text Editor"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "PMO Administrator",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "PMO Head",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "M&E Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "M&E Officer",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "Programme Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "Project Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 1
+    }
+  ]
+}

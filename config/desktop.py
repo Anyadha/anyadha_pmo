@@ -1,2 +1,0 @@
-def get_data():
-    return [{"module_name":"Project Management","type":"module","label":"Project Management","color":"grey","icon":"octicon octicon-project"},{"module_name":"Programme Management","type":"module","label":"Programme Management","color":"grey","icon":"octicon octicon-organization"},{"module_name":"PMO Masters","type":"module","label":"PMO Masters","color":"grey","icon":"octicon octicon-database"}]

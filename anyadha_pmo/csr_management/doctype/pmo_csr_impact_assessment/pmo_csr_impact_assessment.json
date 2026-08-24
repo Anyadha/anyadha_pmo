@@ -1,0 +1,101 @@
+{
+  "doctype": "DocType",
+  "name": "PMO CSR Impact Assessment",
+  "module": "CSR Management",
+  "custom": 0,
+  "istable": 0,
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "csr_project",
+      "label": "CSR Project",
+      "fieldtype": "Link",
+      "options": "PMO CSR Project",
+      "reqd": 1
+    },
+    {
+      "fieldname": "assessment_date",
+      "label": "Assessment Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "assessor",
+      "label": "Assessor",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "methodology",
+      "label": "Methodology",
+      "fieldtype": "Text Editor"
+    },
+    {
+      "fieldname": "findings",
+      "label": "Findings",
+      "fieldtype": "Text Editor"
+    },
+    {
+      "fieldname": "report",
+      "label": "Report",
+      "fieldtype": "Attach"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "PMO Administrator",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "PMO Head",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "CSR Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "Programme Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 1
+    }
+  ]
+}

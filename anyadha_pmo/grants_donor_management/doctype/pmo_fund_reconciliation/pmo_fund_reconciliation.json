@@ -1,0 +1,109 @@
+{
+  "doctype": "DocType",
+  "name": "PMO Fund Reconciliation",
+  "module": "Grants & Donor Management",
+  "custom": 0,
+  "istable": 0,
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "grant",
+      "label": "Grant",
+      "fieldtype": "Link",
+      "options": "PMO Grant",
+      "reqd": 1
+    },
+    {
+      "fieldname": "reconciliation_date",
+      "label": "Reconciliation Date",
+      "fieldtype": "Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "book_balance",
+      "label": "Book Balance",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "bank_balance",
+      "label": "Bank Balance",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "difference",
+      "label": "Difference",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "reconciled_by",
+      "label": "Reconciled By",
+      "fieldtype": "Link",
+      "options": "Employee"
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Draft\nOpen\nIn Progress\nPending Approval\nApproved\nRejected\nCompleted\nClosed\nCancelled"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "PMO Administrator",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "PMO Head",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "Grants Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "Programme Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 1
+    }
+  ]
+}

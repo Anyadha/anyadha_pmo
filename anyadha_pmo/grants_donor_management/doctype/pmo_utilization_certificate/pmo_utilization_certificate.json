@@ -1,0 +1,107 @@
+{
+  "doctype": "DocType",
+  "name": "PMO Utilization Certificate",
+  "module": "Grants & Donor Management",
+  "custom": 0,
+  "istable": 0,
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "grant",
+      "label": "Grant",
+      "fieldtype": "Link",
+      "options": "PMO Grant",
+      "reqd": 1
+    },
+    {
+      "fieldname": "uc_number",
+      "label": "UC Number",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "period_from",
+      "label": "Period From",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "period_to",
+      "label": "Period To",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "amount_utilized",
+      "label": "Amount Utilized",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "certificate_file",
+      "label": "Certificate",
+      "fieldtype": "Attach"
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Draft\nOpen\nIn Progress\nPending Approval\nApproved\nRejected\nCompleted\nClosed\nCancelled"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "PMO Administrator",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "PMO Head",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "Grants Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "Programme Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
+    },
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 1
+    }
+  ]
+}
