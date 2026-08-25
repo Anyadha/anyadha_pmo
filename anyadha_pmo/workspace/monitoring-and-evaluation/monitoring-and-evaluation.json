@@ -24,7 +24,32 @@
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
-  "roles": [],
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Programme Manager"
+    },
+    {
+      "role": "Project Manager"
+    },
+    {
+      "role": "M&E Manager"
+    },
+    {
+      "role": "M&E Officer"
+    },
+    {
+      "role": "Executive / Management"
+    }
+  ],
   "sequence_id": 4.0,
   "shortcuts": [],
   "sidebar_items": [

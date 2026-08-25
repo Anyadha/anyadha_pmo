@@ -1,55 +1,298 @@
 {
   "actions": [],
   "allow_rename": 0,
-  "autoname": "PMO Settings",
   "creation": "2026-08-25 00:00:00.000000",
   "doctype": "DocType",
   "editable_grid": 1,
   "engine": "InnoDB",
   "field_order": [
-    "general_section", "enable_pmo", "default_company", "default_pmo_entity", "default_business_unit", "default_project_type",
-    "defaults_section", "default_fiscal_year", "default_currency",
-    "naming_section", "project_naming_series", "programme_naming_series", "proposal_naming_series", "dpr_naming_series", "risk_naming_series", "audit_naming_series", "compliance_naming_series", "sop_naming_series",
-    "workflow_section", "enable_workflows", "approval_escalation_days",
-    "notification_section", "enable_notifications", "compliance_reminder_days", "risk_review_days",
-    "security_section", "enforce_company_restrictions", "enforce_entity_restrictions", "require_sensitive_record_approval", "enable_maker_checker",
-    "reporting_section", "enable_executive_dashboard", "enable_management_dashboard", "default_reporting_frequency"
+    "general_section",
+    "enable_pmo",
+    "default_company",
+    "default_pmo_entity",
+    "default_business_unit",
+    "default_project_type",
+    "default_workspace",
+    "defaults_section",
+    "default_fiscal_year",
+    "default_currency",
+    "naming_section",
+    "project_naming_series",
+    "programme_naming_series",
+    "proposal_naming_series",
+    "dpr_naming_series",
+    "risk_naming_series",
+    "audit_naming_series",
+    "compliance_naming_series",
+    "sop_naming_series",
+    "workflow_section",
+    "enable_workflows",
+    "approval_escalation_days",
+    "notification_section",
+    "enable_notifications",
+    "compliance_reminder_days",
+    "risk_review_days",
+    "security_section",
+    "enforce_company_restrictions",
+    "enforce_entity_restrictions",
+    "require_sensitive_record_approval",
+    "enable_maker_checker",
+    "integration_section",
+    "enable_email_alerts",
+    "enable_assignment_rules",
+    "enable_auto_repeat",
+    "enable_document_sharing",
+    "enable_activity_logging",
+    "enable_versioning",
+    "reporting_section",
+    "enable_executive_dashboard",
+    "enable_management_dashboard",
+    "default_reporting_frequency"
   ],
   "fields": [
-    {"fieldname":"general_section","fieldtype":"Section Break","label":"General"},
-    {"default":"1","fieldname":"enable_pmo","fieldtype":"Check","label":"Enable PMO"},
-    {"fieldname":"default_company","fieldtype":"Link","label":"Default Company","options":"Company"},
-    {"fieldname":"default_pmo_entity","fieldtype":"Link","label":"Default PMO Entity","options":"PMO Entity"},
-    {"fieldname":"default_business_unit","fieldtype":"Link","label":"Default Business Unit","options":"PMO Business Unit"},
-    {"fieldname":"default_project_type","fieldtype":"Link","label":"Default Project Type","options":"PMO Project Type"},
-    {"fieldname":"defaults_section","fieldtype":"Section Break","label":"Defaults"},
-    {"fieldname":"default_fiscal_year","fieldtype":"Link","label":"Default Fiscal Year","options":"Fiscal Year"},
-    {"fieldname":"default_currency","fieldtype":"Link","label":"Default Currency","options":"Currency"},
-    {"fieldname":"naming_section","fieldtype":"Section Break","label":"Naming"},
-    {"default":"PROJ-.YYYY.-.#####","fieldname":"project_naming_series","fieldtype":"Data","label":"Project Naming Series"},
-    {"default":"PROG-.YYYY.-.#####","fieldname":"programme_naming_series","fieldtype":"Data","label":"Programme Naming Series"},
-    {"default":"PROP-.YYYY.-.#####","fieldname":"proposal_naming_series","fieldtype":"Data","label":"Proposal Naming Series"},
-    {"default":"DPR-.YYYY.-.#####","fieldname":"dpr_naming_series","fieldtype":"Data","label":"DPR Naming Series"},
-    {"default":"RISK-.YYYY.-.#####","fieldname":"risk_naming_series","fieldtype":"Data","label":"Risk Naming Series"},
-    {"default":"AUD-.YYYY.-.#####","fieldname":"audit_naming_series","fieldtype":"Data","label":"Audit Naming Series"},
-    {"default":"COMP-.YYYY.-.#####","fieldname":"compliance_naming_series","fieldtype":"Data","label":"Compliance Naming Series"},
-    {"default":"SOP-.YYYY.-.#####","fieldname":"sop_naming_series","fieldtype":"Data","label":"SOP Naming Series"},
-    {"fieldname":"workflow_section","fieldtype":"Section Break","label":"Workflow"},
-    {"default":"1","fieldname":"enable_workflows","fieldtype":"Check","label":"Enable Workflows"},
-    {"default":"3","fieldname":"approval_escalation_days","fieldtype":"Int","label":"Approval Escalation Days"},
-    {"fieldname":"notification_section","fieldtype":"Section Break","label":"Notifications"},
-    {"default":"1","fieldname":"enable_notifications","fieldtype":"Check","label":"Enable Notifications"},
-    {"default":"7","fieldname":"compliance_reminder_days","fieldtype":"Int","label":"Compliance Reminder Days"},
-    {"default":"30","fieldname":"risk_review_days","fieldtype":"Int","label":"Risk Review Days"},
-    {"fieldname":"security_section","fieldtype":"Section Break","label":"Security"},
-    {"default":"1","fieldname":"enforce_company_restrictions","fieldtype":"Check","label":"Enforce Company Restrictions"},
-    {"default":"1","fieldname":"enforce_entity_restrictions","fieldtype":"Check","label":"Enforce PMO Entity Restrictions"},
-    {"fieldname":"require_sensitive_record_approval","fieldtype":"Check","label":"Require Sensitive Record Approval"},
-    {"fieldname":"enable_maker_checker","fieldtype":"Check","label":"Enable Maker Checker"},
-    {"fieldname":"reporting_section","fieldtype":"Section Break","label":"Reporting"},
-    {"default":"1","fieldname":"enable_executive_dashboard","fieldtype":"Check","label":"Enable Executive Dashboard"},
-    {"default":"1","fieldname":"enable_management_dashboard","fieldtype":"Check","label":"Enable Management Dashboard"},
-    {"default":"Monthly","fieldname":"default_reporting_frequency","fieldtype":"Select","label":"Default Reporting Frequency","options":"Weekly\nMonthly\nQuarterly\nHalf-Yearly\nAnnual"}
+    {
+      "fieldname": "general_section",
+      "fieldtype": "Section Break",
+      "label": "General"
+    },
+    {
+      "default": "1",
+      "fieldname": "enable_pmo",
+      "fieldtype": "Check",
+      "label": "Enable PMO"
+    },
+    {
+      "fieldname": "default_company",
+      "fieldtype": "Link",
+      "label": "Default Company",
+      "options": "Company"
+    },
+    {
+      "fieldname": "default_pmo_entity",
+      "fieldtype": "Link",
+      "label": "Default PMO Entity",
+      "options": "PMO Entity"
+    },
+    {
+      "fieldname": "default_business_unit",
+      "fieldtype": "Link",
+      "label": "Default Business Unit",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "default_project_type",
+      "fieldtype": "Link",
+      "label": "Default Project Type",
+      "options": "PMO Project Type"
+    },
+    {
+      "fieldname": "defaults_section",
+      "fieldtype": "Section Break",
+      "label": "Defaults"
+    },
+    {
+      "fieldname": "default_fiscal_year",
+      "fieldtype": "Link",
+      "label": "Default Fiscal Year",
+      "options": "Fiscal Year"
+    },
+    {
+      "fieldname": "default_currency",
+      "fieldtype": "Link",
+      "label": "Default Currency",
+      "options": "Currency"
+    },
+    {
+      "fieldname": "naming_section",
+      "fieldtype": "Section Break",
+      "label": "Naming"
+    },
+    {
+      "default": "PROJ-.YYYY.-.#####",
+      "fieldname": "project_naming_series",
+      "fieldtype": "Data",
+      "label": "Project Naming Series"
+    },
+    {
+      "default": "PROG-.YYYY.-.#####",
+      "fieldname": "programme_naming_series",
+      "fieldtype": "Data",
+      "label": "Programme Naming Series"
+    },
+    {
+      "default": "PROP-.YYYY.-.#####",
+      "fieldname": "proposal_naming_series",
+      "fieldtype": "Data",
+      "label": "Proposal Naming Series"
+    },
+    {
+      "default": "DPR-.YYYY.-.#####",
+      "fieldname": "dpr_naming_series",
+      "fieldtype": "Data",
+      "label": "DPR Naming Series"
+    },
+    {
+      "default": "RISK-.YYYY.-.#####",
+      "fieldname": "risk_naming_series",
+      "fieldtype": "Data",
+      "label": "Risk Naming Series"
+    },
+    {
+      "default": "AUD-.YYYY.-.#####",
+      "fieldname": "audit_naming_series",
+      "fieldtype": "Data",
+      "label": "Audit Naming Series"
+    },
+    {
+      "default": "COMP-.YYYY.-.#####",
+      "fieldname": "compliance_naming_series",
+      "fieldtype": "Data",
+      "label": "Compliance Naming Series"
+    },
+    {
+      "default": "SOP-.YYYY.-.#####",
+      "fieldname": "sop_naming_series",
+      "fieldtype": "Data",
+      "label": "SOP Naming Series"
+    },
+    {
+      "fieldname": "workflow_section",
+      "fieldtype": "Section Break",
+      "label": "Workflow"
+    },
+    {
+      "default": "1",
+      "fieldname": "enable_workflows",
+      "fieldtype": "Check",
+      "label": "Enable Workflows"
+    },
+    {
+      "default": "3",
+      "fieldname": "approval_escalation_days",
+      "fieldtype": "Int",
+      "label": "Approval Escalation Days"
+    },
+    {
+      "fieldname": "notification_section",
+      "fieldtype": "Section Break",
+      "label": "Notifications"
+    },
+    {
+      "default": "1",
+      "fieldname": "enable_notifications",
+      "fieldtype": "Check",
+      "label": "Enable Notifications"
+    },
+    {
+      "default": "7",
+      "fieldname": "compliance_reminder_days",
+      "fieldtype": "Int",
+      "label": "Compliance Reminder Days"
+    },
+    {
+      "default": "30",
+      "fieldname": "risk_review_days",
+      "fieldtype": "Int",
+      "label": "Risk Review Days"
+    },
+    {
+      "fieldname": "security_section",
+      "fieldtype": "Section Break",
+      "label": "Security"
+    },
+    {
+      "default": "1",
+      "fieldname": "enforce_company_restrictions",
+      "fieldtype": "Check",
+      "label": "Enforce Company Restrictions"
+    },
+    {
+      "default": "1",
+      "fieldname": "enforce_entity_restrictions",
+      "fieldtype": "Check",
+      "label": "Enforce PMO Entity Restrictions"
+    },
+    {
+      "fieldname": "require_sensitive_record_approval",
+      "fieldtype": "Check",
+      "label": "Require Sensitive Record Approval"
+    },
+    {
+      "fieldname": "enable_maker_checker",
+      "fieldtype": "Check",
+      "label": "Enable Maker Checker"
+    },
+    {
+      "fieldname": "reporting_section",
+      "fieldtype": "Section Break",
+      "label": "Reporting"
+    },
+    {
+      "default": "1",
+      "fieldname": "enable_executive_dashboard",
+      "fieldtype": "Check",
+      "label": "Enable Executive Dashboard"
+    },
+    {
+      "default": "1",
+      "fieldname": "enable_management_dashboard",
+      "fieldtype": "Check",
+      "label": "Enable Management Dashboard"
+    },
+    {
+      "default": "Monthly",
+      "fieldname": "default_reporting_frequency",
+      "fieldtype": "Select",
+      "label": "Default Reporting Frequency",
+      "options": "Weekly\nMonthly\nQuarterly\nHalf-Yearly\nAnnual"
+    },
+    {
+      "fieldname": "default_workspace",
+      "label": "Default Workspace",
+      "fieldtype": "Link",
+      "options": "Workspace"
+    },
+    {
+      "fieldname": "integration_section",
+      "fieldtype": "Section Break",
+      "label": "Integration"
+    },
+    {
+      "default": "1",
+      "fieldname": "enable_email_alerts",
+      "fieldtype": "Check",
+      "label": "Enable Email Alerts"
+    },
+    {
+      "default": "1",
+      "fieldname": "enable_assignment_rules",
+      "fieldtype": "Check",
+      "label": "Enable Assignment Rules"
+    },
+    {
+      "default": "1",
+      "fieldname": "enable_auto_repeat",
+      "fieldtype": "Check",
+      "label": "Enable Auto Repeat"
+    },
+    {
+      "default": "1",
+      "fieldname": "enable_document_sharing",
+      "fieldtype": "Check",
+      "label": "Enable Document Sharing"
+    },
+    {
+      "default": "1",
+      "fieldname": "enable_activity_logging",
+      "fieldtype": "Check",
+      "label": "Enable Activity Logging"
+    },
+    {
+      "default": "1",
+      "fieldname": "enable_versioning",
+      "fieldtype": "Check",
+      "label": "Enable Versioning"
+    }
   ],
   "index_web_pages_for_search": 0,
   "issingle": 1,
@@ -57,8 +300,22 @@
   "module": "PMO Masters",
   "name": "PMO Settings",
   "permissions": [
-    {"create":1,"delete":1,"email":1,"export":1,"print":1,"read":1,"role":"PMO Administrator","share":1,"write":1},
-    {"read":1,"write":1,"role":"PMO Head"}
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "role": "PMO Administrator",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "read": 1,
+      "write": 1,
+      "role": "PMO Head"
+    }
   ],
   "sort_field": "modified",
   "sort_order": "DESC",

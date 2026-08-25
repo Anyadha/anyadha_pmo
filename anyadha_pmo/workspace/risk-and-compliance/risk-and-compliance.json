@@ -24,7 +24,29 @@
   "public": 1,
   "quick_lists": [],
   "restrict_to_domain": "",
-  "roles": [],
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Compliance Officer"
+    },
+    {
+      "role": "Internal Auditor"
+    },
+    {
+      "role": "Executive / Management"
+    },
+    {
+      "role": "Board Member"
+    }
+  ],
   "sequence_id": 8.0,
   "shortcuts": [],
   "sidebar_items": [

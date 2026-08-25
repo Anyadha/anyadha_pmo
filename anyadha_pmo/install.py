@@ -1,30 +1,24 @@
 import frappe
 
-ROLES = [
-    ("PMO Administrator", 1),
-    ("PMO Head", 0),
-    ("Programme Manager", 0),
-    ("Project Manager", 0),
-    ("PMO Officer", 0),
-    ("M&E Manager", 0),
-    ("M&E Officer", 0),
-    ("Grants Manager", 0),
-    ("CSR Manager", 0),
-    ("Compliance Officer", 0),
-    ("Internal Auditor", 0),
-    ("Executive / Management", 0),
-    ("Board Member", 0),
-]
+from anyadha_pmo.security.roles import PMO_ROLES
 
 
 def ensure_roles():
-    for role_name, desk_access in ROLES:
+    """Create PMO roles if they do not already exist.
+
+    Existing roles are never overwritten. This makes installation and
+    migration idempotent and safe for an already-running site.
+    """
+    for role_name, desk_access in PMO_ROLES:
         if not frappe.db.exists("Role", role_name):
-            frappe.get_doc({
-                "doctype": "Role",
-                "role_name": role_name,
-                "desk_access": desk_access,
-            }).insert(ignore_permissions=True)
+            frappe.get_doc(
+                {
+                    "doctype": "Role",
+                    "role_name": role_name,
+                    "desk_access": desk_access,
+                }
+            ).insert(ignore_permissions=True)
+
     frappe.db.commit()
 
 
