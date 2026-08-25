@@ -14,10 +14,19 @@ required_apps = ["erpnext"]
 after_install = "anyadha_pmo.install.after_install"
 after_migrate = "anyadha_pmo.install.after_migrate"
 
-# Native Frappe v16 Apps Page / Desk app registration.
-add_to_apps_screen = [{
-    "name": "anyadha_pmo",
-    "title": "Anyadha PMO",
-    "route": "/desk/executive-pmo",
-    "sequence_id": 50,
-}]
+# Frappe v16 application registration.
+
+app_logo_url = "/assets/anyadha_pmo/images/anyadha-pmo-logo.svg"
+
+app_home = "/desk/executive-pmo"
+
+add_to_apps_screen = [
+    {
+        "name": app_name,
+        "logo": app_logo_url,
+        "title": app_title,
+        "route": app_home,
+        "has_permission": "anyadha_pmo.api.app.check_app_permission",
+        "sequence_id": 10,
+    }
+]
