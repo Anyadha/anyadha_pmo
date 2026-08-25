@@ -1,7 +1,7 @@
 {
   "app": "anyadha_pmo",
   "charts": [],
-  "content": "[]",
+  "content": "[{\"id\":\"pmo-header\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Executive PMO</b></span>\",\"col\":12}},{\"id\":\"pmo-strategy-card\",\"type\":\"card\",\"data\":{\"card_name\":\"Strategic & Portfolio Management\",\"col\":4}},{\"id\":\"pmo-governance-card\",\"type\":\"card\",\"data\":{\"card_name\":\"Governance, Risk & Assurance\",\"col\":4}},{\"id\":\"pmo-performance-card\",\"type\":\"card\",\"data\":{\"card_name\":\"Performance & Review\",\"col\":4}},{\"id\":\"pmo-settings-card\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}}]",
   "creation": "2026-08-25 00:00:00.000000",
   "custom_blocks": [],
   "docstatus": 0,
@@ -12,7 +12,154 @@
   "idx": 1,
   "is_hidden": 0,
   "label": "Executive PMO",
-  "links": [],
+  "links": [
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Strategic & Portfolio Management",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Strategic Plans",
+      "link_count": 0,
+      "link_to": "PMO Strategic Plan",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Portfolios",
+      "link_count": 0,
+      "link_to": "PMO Portfolio",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Programmes",
+      "link_count": 0,
+      "link_to": "PMO Program",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Projects",
+      "link_count": 0,
+      "link_to": "PMO Project",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Governance, Risk & Assurance",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Enterprise Risks",
+      "link_count": 0,
+      "link_to": "PMO Enterprise Risk",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Compliance",
+      "link_count": 0,
+      "link_to": "PMO Compliance Item",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Audit Findings",
+      "link_count": 0,
+      "link_to": "PMO Audit Finding",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Performance & Review",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "KPIs",
+      "link_count": 0,
+      "link_to": "PMO KPI",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Management Reviews",
+      "link_count": 0,
+      "link_to": "PMO Management Review",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Settings",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "PMO Settings",
+      "link_count": 0,
+      "link_to": "PMO Settings",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    }
+  ],
   "modified": "2026-08-25 00:00:00.000000",
   "modified_by": "Administrator",
   "module": "PMO Masters",
