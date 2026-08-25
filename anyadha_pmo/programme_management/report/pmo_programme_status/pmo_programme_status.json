@@ -1,0 +1,32 @@
+{
+  "add_total_row": 0,
+  "add_translate_data": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "filters": [],
+  "idx": 0,
+  "is_standard": "Yes",
+  "module": "Programme Management",
+  "name": "PMO Programme Status",
+  "owner": "Administrator",
+  "prepared_report": 0,
+  "query": "SELECT\n    name AS \"Programme:Link/PMO Program:220\",\n    program_name AS \"Programme Name:Data:220\",\n    program_code AS \"Programme Code:Data:140\",\n    program_manager AS \"Programme Manager:Link/User:180\",\n    strategic_objective AS \"Strategic Objective:Link/PMO Strategic Objective:220\",\n    start_date AS \"Start Date:Date:110\",\n    end_date AS \"End Date:Date:110\",\n    status AS \"Status:Data:140\"\nFROM `tabPMO Program`\nORDER BY\n    CASE status\n        WHEN 'In Progress' THEN 1\n        WHEN 'Open' THEN 2\n        WHEN 'Pending Approval' THEN 3\n        WHEN 'Approved' THEN 4\n        WHEN 'Draft' THEN 5\n        WHEN 'Completed' THEN 6\n        WHEN 'Closed' THEN 7\n        ELSE 8\n    END,\n    end_date",
+  "ref_doctype": "PMO Program",
+  "report_name": "PMO Programme Status",
+  "report_type": "Query Report",
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Executive / Management"
+    }
+  ]
+}

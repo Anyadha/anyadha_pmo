@@ -1,0 +1,32 @@
+{
+  "add_total_row": 0,
+  "add_translate_data": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "filters": [],
+  "idx": 0,
+  "is_standard": "Yes",
+  "module": "Performance Mis",
+  "name": "PMO Management Reviews",
+  "owner": "Administrator",
+  "prepared_report": 0,
+  "query": "SELECT\n    name AS \"Review:Link/PMO Management Review:220\",\n    review_title AS \"Review Title:Data:260\",\n    review_date AS \"Review Date:Date:120\",\n    chair AS \"Chair:Link/User:180\",\n    period AS \"Period:Data:120\",\n    status AS \"Status:Data:140\"\nFROM `tabPMO Management Review`\nORDER BY review_date DESC, review_title",
+  "ref_doctype": "PMO Management Review",
+  "report_name": "PMO Management Reviews",
+  "report_type": "Query Report",
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Executive / Management"
+    }
+  ]
+}

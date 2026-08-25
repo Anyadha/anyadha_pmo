@@ -1,0 +1,32 @@
+{
+  "add_total_row": 0,
+  "add_translate_data": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "filters": [],
+  "idx": 0,
+  "is_standard": "Yes",
+  "module": "Performance Mis",
+  "name": "PMO KPI Register",
+  "owner": "Administrator",
+  "prepared_report": 0,
+  "query": "SELECT\n    name AS \"KPI:Link/PMO KPI:220\",\n    kpi_name AS \"KPI Name:Data:240\",\n    kpi_code AS \"KPI Code:Data:140\",\n    category AS \"Category:Data:140\",\n    unit AS \"Unit:Data:120\",\n    frequency AS \"Frequency:Data:120\"\nFROM `tabPMO KPI`\nORDER BY category, kpi_name",
+  "ref_doctype": "PMO KPI",
+  "report_name": "PMO KPI Register",
+  "report_type": "Query Report",
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Executive / Management"
+    }
+  ]
+}

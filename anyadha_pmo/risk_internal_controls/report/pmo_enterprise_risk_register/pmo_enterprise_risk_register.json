@@ -1,0 +1,32 @@
+{
+  "add_total_row": 0,
+  "add_translate_data": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "filters": [],
+  "idx": 0,
+  "is_standard": "Yes",
+  "module": "Risk Internal Controls",
+  "name": "PMO Enterprise Risk Register",
+  "owner": "Administrator",
+  "prepared_report": 0,
+  "query": "SELECT\n    name AS \"Risk:Link/PMO Enterprise Risk:220\",\n    risk_title AS \"Risk Title:Data:220\",\n    entity AS \"Entity:Link/PMO Entity:180\",\n    category AS \"Category:Link/PMO Risk Category:180\",\n    probability AS \"Probability:Data:110\",\n    impact AS \"Impact:Data:110\",\n    score AS \"Score:Float:100\",\n    owner AS \"Owner:Link/User:180\",\n    status AS \"Status:Data:140\"\nFROM `tabPMO Enterprise Risk`\nORDER BY score DESC, risk_title",
+  "ref_doctype": "PMO Enterprise Risk",
+  "report_name": "PMO Enterprise Risk Register",
+  "report_type": "Query Report",
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Executive / Management"
+    }
+  ]
+}

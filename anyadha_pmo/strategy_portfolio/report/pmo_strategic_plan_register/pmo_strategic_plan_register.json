@@ -1,0 +1,32 @@
+{
+  "add_total_row": 0,
+  "add_translate_data": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "filters": [],
+  "idx": 0,
+  "is_standard": "Yes",
+  "module": "Strategy Portfolio",
+  "name": "PMO Strategic Plan Register",
+  "owner": "Administrator",
+  "prepared_report": 0,
+  "query": "SELECT\n    name AS \"Plan:Link/PMO Strategic Plan:220\",\n    plan_name AS \"Plan Name:Data:220\",\n    period_from AS \"Period From:Date:110\",\n    period_to AS \"Period To:Date:110\",\n    status AS \"Status:Data:140\"\nFROM `tabPMO Strategic Plan`\nORDER BY period_from DESC, plan_name",
+  "ref_doctype": "PMO Strategic Plan",
+  "report_name": "PMO Strategic Plan Register",
+  "report_type": "Query Report",
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Executive / Management"
+    }
+  ]
+}

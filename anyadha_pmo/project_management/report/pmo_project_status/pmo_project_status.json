@@ -1,0 +1,32 @@
+{
+  "add_total_row": 0,
+  "add_translate_data": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "filters": [],
+  "idx": 0,
+  "is_standard": "Yes",
+  "module": "Project Management",
+  "name": "PMO Project Status",
+  "owner": "Administrator",
+  "prepared_report": 0,
+  "query": "SELECT\n    name AS \"Project:Link/PMO Project:220\",\n    project_title AS \"Project:Data:220\",\n    project_code AS \"Project Code:Data:140\",\n    program AS \"Programme:Link/PMO Program:200\",\n    portfolio AS \"Portfolio:Link/PMO Portfolio:200\",\n    project_manager AS \"Project Manager:Link/User:180\",\n    start_date AS \"Start Date:Date:110\",\n    end_date AS \"End Date:Date:110\",\n    status AS \"Status:Data:140\"\nFROM `tabPMO Project`\nORDER BY\n    CASE status\n        WHEN 'In Progress' THEN 1\n        WHEN 'Open' THEN 2\n        WHEN 'Pending Approval' THEN 3\n        WHEN 'Approved' THEN 4\n        WHEN 'Draft' THEN 5\n        WHEN 'Completed' THEN 6\n        WHEN 'Closed' THEN 7\n        ELSE 8\n    END,\n    end_date",
+  "ref_doctype": "PMO Project",
+  "report_name": "PMO Project Status",
+  "report_type": "Query Report",
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Executive / Management"
+    }
+  ]
+}

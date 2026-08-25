@@ -1,0 +1,32 @@
+{
+  "add_total_row": 0,
+  "add_translate_data": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "filters": [],
+  "idx": 0,
+  "is_standard": "Yes",
+  "module": "Project Management",
+  "name": "PMO Project Financial Status",
+  "owner": "Administrator",
+  "prepared_report": 0,
+  "query": "SELECT\n    name AS \"Project:Link/PMO Project:220\",\n    project_title AS \"Project:Data:220\",\n    project_code AS \"Project Code:Data:140\",\n    approved_budget AS \"Approved Budget:Currency:150\",\n    actual_cost AS \"Actual Cost:Currency:150\",\n    (COALESCE(approved_budget, 0) - COALESCE(actual_cost, 0))\n        AS \"Variance:Currency:150\",\n    status AS \"Status:Data:140\"\nFROM `tabPMO Project`\nORDER BY\n    (COALESCE(approved_budget, 0) - COALESCE(actual_cost, 0))",
+  "ref_doctype": "PMO Project",
+  "report_name": "PMO Project Financial Status",
+  "report_type": "Query Report",
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Executive / Management"
+    }
+  ]
+}

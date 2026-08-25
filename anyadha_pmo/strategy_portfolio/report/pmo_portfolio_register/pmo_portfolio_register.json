@@ -1,0 +1,32 @@
+{
+  "add_total_row": 0,
+  "add_translate_data": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "filters": [],
+  "idx": 0,
+  "is_standard": "Yes",
+  "module": "Strategy Portfolio",
+  "name": "PMO Portfolio Register",
+  "owner": "Administrator",
+  "prepared_report": 0,
+  "query": "SELECT\n    name AS \"Portfolio:Link/PMO Portfolio:220\",\n    portfolio_name AS \"Portfolio Name:Data:220\",\n    strategic_plan AS \"Strategic Plan:Link/PMO Strategic Plan:220\",\n    portfolio_manager AS \"Portfolio Manager:Link/User:180\",\n    status AS \"Status:Data:140\"\nFROM `tabPMO Portfolio`\nORDER BY portfolio_name",
+  "ref_doctype": "PMO Portfolio",
+  "report_name": "PMO Portfolio Register",
+  "report_type": "Query Report",
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Executive / Management"
+    }
+  ]
+}

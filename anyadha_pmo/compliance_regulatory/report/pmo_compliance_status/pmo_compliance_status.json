@@ -1,0 +1,32 @@
+{
+  "add_total_row": 0,
+  "add_translate_data": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "filters": [],
+  "idx": 0,
+  "is_standard": "Yes",
+  "module": "Compliance Regulatory",
+  "name": "PMO Compliance Status",
+  "owner": "Administrator",
+  "prepared_report": 0,
+  "query": "SELECT\n    name AS \"Compliance Item:Link/PMO Compliance Item:220\",\n    obligation AS \"Obligation:Link/PMO Compliance Obligation:240\",\n    period AS \"Period:Data:120\",\n    due_date AS \"Due Date:Date:110\",\n    completion_date AS \"Completion Date:Date:130\",\n    compliance_status AS \"Compliance Status:Data:170\",\n    remarks AS \"Remarks:Small Text:260\"\nFROM `tabPMO Compliance Item`\nORDER BY\n    CASE compliance_status\n        WHEN 'Non-Compliant' THEN 1\n        WHEN 'Partially Compliant' THEN 2\n        WHEN 'Open' THEN 3\n        WHEN 'Compliant' THEN 4\n        ELSE 5\n    END,\n    due_date",
+  "ref_doctype": "PMO Compliance Item",
+  "report_name": "PMO Compliance Status",
+  "report_type": "Query Report",
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Executive / Management"
+    }
+  ]
+}
