@@ -1,38 +1,31 @@
-# Anyadha PMO v2.0.0
+# Anyadha PMO
 
-Enterprise PMO application for Frappe Framework 16 / ERPNext 16.
+Anyadha Enterprise PMO application for Frappe Framework v16+ and ERPNext v16+.
 
-## Architecture
-Anyadha PMO is a governance and management layer over native ERPNext transactions. It does not duplicate ERPNext accounting, procurement, HR, inventory, asset or tax transaction engines.
+## Business modules
 
-## Functional domains
-- PMO Masters
-- Governance & Board
-- Delegation & Approvals
-- Strategy & Portfolio
-- Proposal & DPR
-- Programme & Project Management
-- Monitoring & Evaluation
-- Grants & Donor Management
-- CSR Management
-- Risk & Internal Controls
-- Compliance & Regulatory
-- Audit & Assurance
-- SOP & Document Control
-- KPI, MIS & Performance
+1. PMO Masters
+2. Governance
+3. Strategy Portfolio
+4. Proposal DPR
+5. Programme Management
+6. Project Management
+7. Monitoring Evaluation
+8. Grants Donor Management
+9. CSR Management
+10. Risk Internal Controls
+11. Compliance Regulatory
+12. Audit Assurance
+13. SOP Document Control
+14. Performance MIS
 
-## Frappe target
-Frappe >=16,<17
-Python >=3.10,<3.15
+The existing PMO DocTypes are preserved. Foundation work is separated from business-process implementation.
 
-## Installation
-Install this app on an ERPNext v16 site. Do not install as a replacement for ERPNext.
+## v16 navigation
 
-## Validation
-Run:
-    python validate_app.py
+Public Workspaces are shipped under `anyadha_pmo/workspace/`.
+Curated v16 Workspace Sidebar records are shipped under `anyadha_pmo/workspace_sidebar/`.
 
-The validator checks package structure, JSON syntax, DocType/module consistency, controller references, and duplicate DocType names.
+## Dependencies
 
-## Important design principle
-Native ERPNext remains the transaction system of record for accounting, purchasing, stock, assets, HR/payroll and related transactions. Anyadha PMO provides governance, planning, monitoring, compliance, assurance and executive reporting around those transactions.
+ERPNext is required. India Compliance, HRMS, Raven, Agriculture and other apps remain optional integrations.

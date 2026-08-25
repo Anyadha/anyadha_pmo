@@ -1,29 +1,21 @@
 [project]
-
 name = "anyadha_pmo"
-
-version = "2.0.0"
-
-authors = [
-    { name = "Anyadha", email = "info@anyadha.com" }
-]
-
-description = "Anyadha Enterprise PMO - Governance, Programme, Project, M&E, Grants, CSR, Compliance, Audit and MIS"
-
+version = "2.1.0"
+authors = [{ name = "Anyadha", email = "info@anyadha.com" }]
+description = "Anyadha Enterprise PMO - Governance, Strategy, Programme, Project, M&E, Grants, CSR, Risk, Compliance, Audit and MIS"
 requires-python = ">=3.14,<3.15"
-
 readme = "README.md"
-
 license = { file = "license.txt" }
-
 dependencies = []
 
 [build-system]
-
 requires = ["flit_core >=3.4,<4"]
-
 build-backend = "flit_core.buildapi"
 
 [tool.bench.frappe-dependencies]
-
 frappe = ">=16.0.0-dev,<17.0.0"
+erpnext = ">=16.0.0-dev,<17.0.0"
+
+[tool.ruff]
+line-length = 110
+target-version = "py314"
