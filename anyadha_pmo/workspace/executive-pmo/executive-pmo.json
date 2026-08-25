@@ -165,7 +165,17 @@
   "module": "PMO Masters",
   "module_onboarding": "",
   "name": "Executive PMO",
-  "number_cards": [],
+  "number_cards": [
+    "PMO Total Strategic Plans",
+    "PMO Total Portfolios",
+    "PMO Total Programmes",
+    "PMO Total Projects",
+    "PMO Open Enterprise Risks",
+    "PMO Non-Compliant Items",
+    "PMO Open Audit Findings",
+    "PMO Total KPIs",
+    "PMO Management Reviews"
+  ],
   "owner": "Administrator",
   "parent_page": "",
   "public": 1,
