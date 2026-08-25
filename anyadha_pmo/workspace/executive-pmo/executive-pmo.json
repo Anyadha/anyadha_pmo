@@ -194,6 +194,20 @@
       "open_in_new_tab": 0,
       "show_arrow": 0,
       "type": "Link"
+    },
+    {
+      "child": 0,
+      "collapsible": 1,
+      "default_workspace": 0,
+      "icon": "settings",
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "PMO Settings",
+      "link_to": "PMO Settings",
+      "link_type": "DocType",
+      "open_in_new_tab": 0,
+      "show_arrow": 0,
+      "type": "Link"
     }
   ]
 }

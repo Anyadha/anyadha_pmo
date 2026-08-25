@@ -32,16 +32,10 @@
       "role": "PMO Head"
     },
     {
-      "role": "PMO Officer"
-    },
-    {
-      "role": "Programme Manager"
-    },
-    {
-      "role": "Project Manager"
-    },
-    {
       "role": "Executive / Management"
+    },
+    {
+      "role": "Board Member"
     }
   ],
   "sequence_id": 2.0,

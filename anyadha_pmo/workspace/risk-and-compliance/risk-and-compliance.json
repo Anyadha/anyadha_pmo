@@ -32,19 +32,10 @@
       "role": "PMO Head"
     },
     {
-      "role": "PMO Officer"
-    },
-    {
       "role": "Compliance Officer"
     },
     {
       "role": "Internal Auditor"
-    },
-    {
-      "role": "Executive / Management"
-    },
-    {
-      "role": "Board Member"
     }
   ],
   "sequence_id": 8.0,
