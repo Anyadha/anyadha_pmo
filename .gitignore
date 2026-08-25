@@ -11,3 +11,7 @@ build/
 *.egg-info/
 
 .pytest_cache/
+
+.recreate_backup_*
+__pycache__/
+*.pyc
