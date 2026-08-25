@@ -30,3 +30,8 @@ add_to_apps_screen = [
         "sequence_id": 10,
     }
 ]
+
+
+override_doctype_class = {
+    "PMO Project": "anyadha_pmo.project_management.doctype.pmo_project.pmo_project.PmoProject",
+}
