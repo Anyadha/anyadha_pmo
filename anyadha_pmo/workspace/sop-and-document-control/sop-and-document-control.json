@@ -12,7 +12,123 @@
   "idx": 10,
   "is_hidden": 0,
   "label": "SOP & Document Control",
-  "links": [],
+  "links": [
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "SOP & Policy Management",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "SOPs",
+      "link_count": 0,
+      "link_to": "PMO SOP",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Policies",
+      "link_count": 0,
+      "link_to": "PMO Policy",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Document Control",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Controlled Documents",
+      "link_count": 0,
+      "link_to": "PMO Document Control",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Document Versions",
+      "link_count": 0,
+      "link_to": "PMO Document Version",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Document Reviews",
+      "link_count": 0,
+      "link_to": "PMO Document Review",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Document Approvals",
+      "link_count": 0,
+      "link_to": "PMO Document Approval",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Retention & Improvement",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Retention Rules",
+      "link_count": 0,
+      "link_to": "PMO Record Retention Rule",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Governance Improvements",
+      "link_count": 0,
+      "link_to": "PMO Governance Improvement",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    }
+  ],
   "modified": "2026-08-25 00:00:00.000000",
   "modified_by": "Administrator",
   "module": "SOP Document Control",

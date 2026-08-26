@@ -12,7 +12,176 @@
   "idx": 7,
   "is_hidden": 0,
   "label": "Governance",
-  "links": [],
+  "links": [
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Governance Framework",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Governance Bodies",
+      "link_count": 0,
+      "link_to": "PMO Governance Body",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Governance Calendar",
+      "link_count": 0,
+      "link_to": "PMO Governance Calendar",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Board Meetings",
+      "link_count": 0,
+      "link_to": "PMO Board Meeting",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Board & Decision Management",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Board Agenda",
+      "link_count": 0,
+      "link_to": "PMO Board Agenda Item",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Board Decisions",
+      "link_count": 0,
+      "link_to": "PMO Board Decision",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Authority & Approvals",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Authority Matrix",
+      "link_count": 0,
+      "link_to": "PMO Authority Matrix",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Authority Rules",
+      "link_count": 0,
+      "link_to": "PMO Authority Rule",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Approval Requests",
+      "link_count": 0,
+      "link_to": "PMO Approval Request",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Approval Steps",
+      "link_count": 0,
+      "link_to": "PMO Approval Step",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Exceptions & Due Diligence",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Exception Requests",
+      "link_count": 0,
+      "link_to": "PMO Exception Request",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Related Party Transactions",
+      "link_count": 0,
+      "link_to": "PMO Related Party Transaction",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Vendor Due Diligence",
+      "link_count": 0,
+      "link_to": "PMO Vendor Due Diligence",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    }
+  ],
   "modified": "2026-08-25 00:00:00.000000",
   "modified_by": "Administrator",
   "module": "Governance",

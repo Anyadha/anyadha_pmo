@@ -12,7 +12,145 @@
   "idx": 5,
   "is_hidden": 0,
   "label": "Grants & Donor Management",
-  "links": [],
+  "links": [
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Donors & Grants",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Donors",
+      "link_count": 0,
+      "link_to": "PMO Donor",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Grants",
+      "link_count": 0,
+      "link_to": "PMO Grant",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Grant Agreements",
+      "link_count": 0,
+      "link_to": "PMO Grant Agreement",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Grant Budgets",
+      "link_count": 0,
+      "link_to": "PMO Grant Budget",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Disbursement & Utilization",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Disbursements",
+      "link_count": 0,
+      "link_to": "PMO Grant Disbursement",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Grant Utilization",
+      "link_count": 0,
+      "link_to": "PMO Grant Utilization",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Utilization Certificates",
+      "link_count": 0,
+      "link_to": "PMO Utilization Certificate",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Reporting & Reconciliation",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Grant Reporting",
+      "link_count": 0,
+      "link_to": "PMO Grant Reporting",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Donor Reports",
+      "link_count": 0,
+      "link_to": "PMO Donor Report",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Fund Reconciliation",
+      "link_count": 0,
+      "link_to": "PMO Fund Reconciliation",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    }
+  ],
   "modified": "2026-08-25 00:00:00.000000",
   "modified_by": "Administrator",
   "module": "Grants Donor Management",

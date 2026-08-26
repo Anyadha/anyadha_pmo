@@ -12,7 +12,165 @@
   "idx": 4,
   "is_hidden": 0,
   "label": "Monitoring & Evaluation",
-  "links": [],
+  "links": [
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "M&E Framework",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "M&E Frameworks",
+      "link_count": 0,
+      "link_to": "PMO M and E Framework",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Logical Frameworks",
+      "link_count": 0,
+      "link_to": "PMO Logical Framework",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Theory of Change",
+      "link_count": 0,
+      "link_to": "PMO Theory of Change",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Indicators & Targets",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Indicators",
+      "link_count": 0,
+      "link_to": "PMO Indicator",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Targets",
+      "link_count": 0,
+      "link_to": "PMO Target",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Baseline Surveys",
+      "link_count": 0,
+      "link_to": "PMO Baseline Survey",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Baseline Indicators",
+      "link_count": 0,
+      "link_to": "PMO Baseline Indicator",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Monitoring",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Monitoring Plans",
+      "link_count": 0,
+      "link_to": "PMO Monitoring Plan",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Monitoring Visits",
+      "link_count": 0,
+      "link_to": "PMO Monitoring Visit",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Observations",
+      "link_count": 0,
+      "link_to": "PMO Monitoring Observation",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Evaluation",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Evaluations",
+      "link_count": 0,
+      "link_to": "PMO Evaluation",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    }
+  ],
   "modified": "2026-08-25 00:00:00.000000",
   "modified_by": "Administrator",
   "module": "Monitoring Evaluation",

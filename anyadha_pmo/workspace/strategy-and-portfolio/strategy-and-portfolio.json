@@ -12,7 +12,123 @@
   "idx": 2,
   "is_hidden": 0,
   "label": "Strategy & Portfolio",
-  "links": [],
+  "links": [
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Strategic Planning",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Strategic Plans",
+      "link_count": 0,
+      "link_to": "PMO Strategic Plan",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Strategic Initiatives",
+      "link_count": 0,
+      "link_to": "PMO Strategic Initiative",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Portfolio Management",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Portfolios",
+      "link_count": 0,
+      "link_to": "PMO Portfolio",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Portfolio Projects",
+      "link_count": 0,
+      "link_to": "PMO Portfolio Project",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Portfolio Reviews",
+      "link_count": 0,
+      "link_to": "PMO Portfolio Review",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Portfolio Risks",
+      "link_count": 0,
+      "link_to": "PMO Portfolio Risk",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Reports",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Strategic Plan Register",
+      "link_count": 0,
+      "link_to": "PMO Strategic Plan Register",
+      "link_type": "Report",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Portfolio Register",
+      "link_count": 0,
+      "link_to": "PMO Portfolio Register",
+      "link_type": "Report",
+      "onboard": 1,
+      "type": "Link"
+    }
+  ],
   "modified": "2026-08-25 00:00:00.000000",
   "modified_by": "Administrator",
   "module": "Strategy Portfolio",
