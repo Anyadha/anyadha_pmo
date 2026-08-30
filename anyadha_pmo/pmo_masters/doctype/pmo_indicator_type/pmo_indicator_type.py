@@ -1,5 +1,5 @@
 import frappe
 from frappe.model.document import Document
 
-class PmoIndicatorType(Document):
+class PMOIndicatorType(Document):
     pass

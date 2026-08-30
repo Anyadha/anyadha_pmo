@@ -1,5 +1,5 @@
 import frappe
 from frappe.model.document import Document
 
-class PmoGrantAgreement(Document):
+class PMOGrantAgreement(Document):
     pass

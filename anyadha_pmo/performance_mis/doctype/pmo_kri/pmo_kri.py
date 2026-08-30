@@ -1,5 +1,5 @@
 import frappe
 from frappe.model.document import Document
 
-class PmoKri(Document):
+class PMOKRI(Document):
     pass

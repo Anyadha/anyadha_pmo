@@ -1,5 +1,5 @@
 import frappe
 from frappe.model.document import Document
 
-class PmoAuditEngagement(Document):
+class PMOAuditEngagement(Document):
     pass

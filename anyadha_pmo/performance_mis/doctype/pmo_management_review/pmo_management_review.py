@@ -1,5 +1,5 @@
 import frappe
 from frappe.model.document import Document
 
-class PmoManagementReview(Document):
+class PMOManagementReview(Document):
     pass

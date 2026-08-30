@@ -1,5 +1,5 @@
 import frappe
 from frappe.model.document import Document
 
-class PmoComplianceType(Document):
+class PMOComplianceType(Document):
     pass

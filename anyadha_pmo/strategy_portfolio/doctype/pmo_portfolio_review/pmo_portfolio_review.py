@@ -1,5 +1,5 @@
 import frappe
 from frappe.model.document import Document
 
-class PmoPortfolioReview(Document):
+class PMOPortfolioReview(Document):
     pass
