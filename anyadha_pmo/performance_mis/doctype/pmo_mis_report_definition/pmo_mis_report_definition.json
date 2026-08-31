@@ -27,7 +27,7 @@
       "options": "Daily\nWeekly\nMonthly\nQuarterly\nAnnual\nOn Demand"
     },
     {
-      "fieldname": "owner",
+      "fieldname": "responsible_employee",
       "label": "Owner",
       "fieldtype": "Link",
       "options": "Employee"

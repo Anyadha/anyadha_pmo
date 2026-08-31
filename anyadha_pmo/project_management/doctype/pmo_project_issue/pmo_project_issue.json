@@ -28,7 +28,7 @@
       "options": "Low\nMedium\nHigh\nCritical"
     },
     {
-      "fieldname": "owner",
+      "fieldname": "responsible_employee",
       "label": "Owner",
       "fieldtype": "Link",
       "options": "Employee"
