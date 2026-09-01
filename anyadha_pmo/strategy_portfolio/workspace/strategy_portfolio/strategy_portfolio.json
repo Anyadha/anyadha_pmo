@@ -1,0 +1,298 @@
+{
+  "app": "anyadha_pmo",
+  "charts": [],
+  "content": "[{\"id\":\"anyadha_header\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\"><b>Strategy & Portfolio</b></span>\",\"col\":12}},{\"id\":\"anyadha_intro\",\"type\":\"paragraph\",\"data\":{\"text\":\"<p>Anyadha PMO Strategy & Portfolio workspace.</p>\",\"col\":12}},{\"id\":\"anyadha_master_header\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Master Data & Transactions</b></span>\",\"col\":12}},{\"id\":\"anyadha_master_card\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data & Transactions\",\"col\":12}},{\"id\":\"anyadha_reports_header\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Reports</b></span>\",\"col\":12}},{\"id\":\"anyadha_reports_card\",\"type\":\"card\",\"data\":{\"card_name\":\"Reports\",\"col\":12}}]",
+  "creation": "2026-08-25 00:00:00.000000",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "target",
+  "idx": 2,
+  "is_hidden": 0,
+  "label": "Strategy & Portfolio",
+  "links": [
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Master Data & Transactions",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Portfolio",
+      "link_count": 0,
+      "link_to": "PMO Portfolio",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Portfolio Project",
+      "link_count": 0,
+      "link_to": "PMO Portfolio Project",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Portfolio Review",
+      "link_count": 0,
+      "link_to": "PMO Portfolio Review",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Portfolio Risk",
+      "link_count": 0,
+      "link_to": "PMO Portfolio Risk",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Strategic Initiative",
+      "link_count": 0,
+      "link_to": "PMO Strategic Initiative",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Strategic Plan",
+      "link_count": 0,
+      "link_to": "PMO Strategic Plan",
+      "link_type": "DocType",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Reports",
+      "link_count": 0,
+      "onboard": 0,
+      "type": "Card Break"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Portfolio Register",
+      "link_count": 0,
+      "link_to": "PMO Portfolio Register",
+      "link_type": "Report",
+      "onboard": 1,
+      "type": "Link"
+    },
+    {
+      "dependencies": "",
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Strategic Plan Register",
+      "link_count": 0,
+      "link_to": "PMO Strategic Plan Register",
+      "link_type": "Report",
+      "onboard": 1,
+      "type": "Link"
+    }
+  ],
+  "modified": "2026-09-01 13:07:38.447534",
+  "modified_by": "Administrator",
+  "module": "Strategy Portfolio",
+  "module_onboarding": "",
+  "name": "Strategy & Portfolio",
+  "number_cards": [],
+  "owner": "Administrator",
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": "",
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "Executive / Management"
+    },
+    {
+      "role": "Board Member"
+    }
+  ],
+  "sequence_id": 2.0,
+  "shortcuts": [],
+  "sidebar_items": [
+    {
+      "type": "Link",
+      "label": "Home",
+      "link_type": "Workspace",
+      "link_to": "Strategy & Portfolio",
+      "icon": "",
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "show_arrow": 0,
+      "child": 0
+    },
+    {
+      "type": "Link",
+      "label": "Dashboard",
+      "link_type": "Dashboard",
+      "link_to": "Strategy & Portfolio",
+      "icon": "",
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "show_arrow": 0,
+      "child": 0
+    },
+    {
+      "type": "Section Break",
+      "label": "Master Data & Transactions",
+      "link_type": "DocType",
+      "link_to": "",
+      "icon": "",
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 1,
+      "show_arrow": 0,
+      "child": 0
+    },
+    {
+      "type": "Link",
+      "label": "Portfolio",
+      "link_type": "DocType",
+      "link_to": "PMO Portfolio",
+      "icon": "",
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "show_arrow": 0,
+      "child": 0
+    },
+    {
+      "type": "Link",
+      "label": "Portfolio Project",
+      "link_type": "DocType",
+      "link_to": "PMO Portfolio Project",
+      "icon": "",
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "show_arrow": 0,
+      "child": 0
+    },
+    {
+      "type": "Link",
+      "label": "Portfolio Review",
+      "link_type": "DocType",
+      "link_to": "PMO Portfolio Review",
+      "icon": "",
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "show_arrow": 0,
+      "child": 0
+    },
+    {
+      "type": "Link",
+      "label": "Portfolio Risk",
+      "link_type": "DocType",
+      "link_to": "PMO Portfolio Risk",
+      "icon": "",
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "show_arrow": 0,
+      "child": 0
+    },
+    {
+      "type": "Link",
+      "label": "Strategic Initiative",
+      "link_type": "DocType",
+      "link_to": "PMO Strategic Initiative",
+      "icon": "",
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "show_arrow": 0,
+      "child": 0
+    },
+    {
+      "type": "Link",
+      "label": "Strategic Plan",
+      "link_type": "DocType",
+      "link_to": "PMO Strategic Plan",
+      "icon": "",
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "show_arrow": 0,
+      "child": 0
+    },
+    {
+      "type": "Section Break",
+      "label": "Reports",
+      "link_type": "DocType",
+      "link_to": "",
+      "icon": "",
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 1,
+      "show_arrow": 0,
+      "child": 0
+    },
+    {
+      "type": "Link",
+      "label": "Portfolio Register",
+      "link_type": "Report",
+      "link_to": "PMO Portfolio Register",
+      "icon": "",
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "show_arrow": 0,
+      "child": 0
+    },
+    {
+      "type": "Link",
+      "label": "Strategic Plan Register",
+      "link_type": "Report",
+      "link_to": "PMO Strategic Plan Register",
+      "icon": "",
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "show_arrow": 0,
+      "child": 0
+    }
+  ],
+  "type": "Workspace",
+  "standard": 1
+}
