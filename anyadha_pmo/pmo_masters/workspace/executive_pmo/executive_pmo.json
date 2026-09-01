@@ -227,7 +227,7 @@
       "onboard": 1
     }
   ],
-  "modified": "2026-08-25 00:00:00.000000",
+  "modified": "2026-09-01 11:11:38.433884",
   "modified_by": "Administrator",
   "module": "PMO Masters",
   "module_onboarding": "",
@@ -577,5 +577,7 @@
       "open_in_new_tab": 0,
       "default_workspace": 1
     }
-  ]
+  ],
+  "type": "Workspace",
+  "standard": 1
 }
