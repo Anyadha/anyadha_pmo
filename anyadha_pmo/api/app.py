@@ -28,7 +28,24 @@ def check_app_permission():
 
     roles = set(frappe.get_roles())
 
+    # System Manager must retain access so the PMO can be
+    # re-enabled if the master switch is turned off.
     if "System Manager" in roles:
         return True
+
+    # PMO must be explicitly enabled before PMO-role users
+    # can access the application.
+    try:
+        enable_pmo = frappe.db.get_single_value(
+            "PMO Settings",
+            "enable_pmo",
+        )
+    except Exception:
+        # During installation/migration the singleton may not
+        # exist yet. Do not block application installation.
+        enable_pmo = 1
+
+    if not enable_pmo:
+        return False
 
     return bool(roles & PMO_ROLES)
