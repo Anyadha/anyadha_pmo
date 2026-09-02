@@ -1,0 +1,233 @@
+{
+  "app": "anyadha_pmo",
+  "doctype": "Workspace Sidebar",
+  "header_icon": "sheet",
+  "items": [
+    {
+      "child": 0,
+      "collapsible": 1,
+      "icon": "house",
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Home",
+      "link_to": "Governance",
+      "link_type": "Workspace",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 0,
+      "collapsible": 1,
+      "icon": "database",
+      "indent": 1,
+      "keep_closed": 1,
+      "label": "Master Data & Transactions",
+      "link_to": "",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Section Break"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Approval Request",
+      "link_to": "PMO Approval Request",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Approval Step",
+      "link_to": "PMO Approval Step",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Authority Matrix",
+      "link_to": "PMO Authority Matrix",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Authority Rule",
+      "link_to": "PMO Authority Rule",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Board Agenda Item",
+      "link_to": "PMO Board Agenda Item",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Board Decision",
+      "link_to": "PMO Board Decision",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Board Meeting",
+      "link_to": "PMO Board Meeting",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Contract Governance",
+      "link_to": "PMO Contract Governance",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Exception Request",
+      "link_to": "PMO Exception Request",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Governance Action",
+      "link_to": "PMO Governance Action",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Governance Body",
+      "link_to": "PMO Governance Body",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Governance Calendar",
+      "link_to": "PMO Governance Calendar",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Governance Compliance Declaration",
+      "link_to": "PMO Governance Compliance Declaration",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Governance Role",
+      "link_to": "PMO Governance Role",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Procurement Exception",
+      "link_to": "PMO Procurement Exception",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Related Party Transaction",
+      "link_to": "PMO Related Party Transaction",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Reserved Matter",
+      "link_to": "PMO Reserved Matter",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Vendor Due Diligence",
+      "link_to": "PMO Vendor Due Diligence",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    }
+  ],
+  "module": "Governance",
+  "name": "Governance",
+  "standard": 1,
+  "title": "Governance"
+}

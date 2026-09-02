@@ -1,0 +1,134 @@
+{
+  "app": "anyadha_pmo",
+  "doctype": "Workspace Sidebar",
+  "header_icon": "sheet",
+  "items": [
+    {
+      "child": 0,
+      "collapsible": 1,
+      "icon": "house",
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Home",
+      "link_to": "CSR Management",
+      "link_type": "Workspace",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 0,
+      "collapsible": 1,
+      "icon": "database",
+      "indent": 1,
+      "keep_closed": 1,
+      "label": "Master Data & Transactions",
+      "link_to": "",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Section Break"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "CSR Agreement",
+      "link_to": "PMO CSR Agreement",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "CSR Budget",
+      "link_to": "PMO CSR Budget",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "CSR Compliance",
+      "link_to": "PMO CSR Compliance",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "CSR Impact Assessment",
+      "link_to": "PMO CSR Impact Assessment",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "CSR Partner",
+      "link_to": "PMO CSR Partner",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "CSR Project",
+      "link_to": "PMO CSR Project",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "CSR Proposal",
+      "link_to": "PMO CSR Proposal",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "CSR Report",
+      "link_to": "PMO CSR Report",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "CSR Utilization",
+      "link_to": "PMO CSR Utilization",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    }
+  ],
+  "module": "CSR Management",
+  "name": "CSR Management",
+  "standard": 1,
+  "title": "CSR Management"
+}

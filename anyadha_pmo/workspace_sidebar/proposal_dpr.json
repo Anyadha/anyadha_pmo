@@ -1,0 +1,112 @@
+{
+  "app": "anyadha_pmo",
+  "doctype": "Workspace Sidebar",
+  "header_icon": "sheet",
+  "items": [
+    {
+      "child": 0,
+      "collapsible": 1,
+      "icon": "house",
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Home",
+      "link_to": "Proposal & DPR",
+      "link_type": "Workspace",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 0,
+      "collapsible": 1,
+      "icon": "database",
+      "indent": 1,
+      "keep_closed": 1,
+      "label": "Master Data & Transactions",
+      "link_to": "",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Section Break"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "DPR",
+      "link_to": "PMO DPR",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "DPR Approval",
+      "link_to": "PMO DPR Approval",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "DPR Section",
+      "link_to": "PMO DPR Section",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Opportunity",
+      "link_to": "PMO Opportunity",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Proposal",
+      "link_to": "PMO Proposal",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Proposal Approval",
+      "link_to": "PMO Proposal Approval",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Proposal Evaluation",
+      "link_to": "PMO Proposal Evaluation",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    }
+  ],
+  "module": "Proposal DPR",
+  "name": "Proposal & DPR",
+  "standard": 1,
+  "title": "Proposal & DPR"
+}

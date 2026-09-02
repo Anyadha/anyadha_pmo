@@ -1,0 +1,123 @@
+{
+  "app": "anyadha_pmo",
+  "doctype": "Workspace Sidebar",
+  "header_icon": "sheet",
+  "items": [
+    {
+      "child": 0,
+      "collapsible": 1,
+      "icon": "house",
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Home",
+      "link_to": "SOP & Document Control",
+      "link_type": "Workspace",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 0,
+      "collapsible": 1,
+      "icon": "database",
+      "indent": 1,
+      "keep_closed": 1,
+      "label": "Master Data & Transactions",
+      "link_to": "",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Section Break"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Document Approval",
+      "link_to": "PMO Document Approval",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Document Control",
+      "link_to": "PMO Document Control",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Document Review",
+      "link_to": "PMO Document Review",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Document Version",
+      "link_to": "PMO Document Version",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Governance Improvement",
+      "link_to": "PMO Governance Improvement",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Policy",
+      "link_to": "PMO Policy",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Record Retention Rule",
+      "link_to": "PMO Record Retention Rule",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "SOP",
+      "link_to": "PMO SOP",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    }
+  ],
+  "module": "SOP Document Control",
+  "name": "SOP & Document Control",
+  "standard": 1,
+  "title": "SOP & Document Control"
+}

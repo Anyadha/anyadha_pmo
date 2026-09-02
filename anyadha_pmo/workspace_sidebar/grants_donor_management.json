@@ -1,0 +1,156 @@
+{
+  "app": "anyadha_pmo",
+  "doctype": "Workspace Sidebar",
+  "header_icon": "sheet",
+  "items": [
+    {
+      "child": 0,
+      "collapsible": 1,
+      "icon": "house",
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Home",
+      "link_to": "Grants & Donor Management",
+      "link_type": "Workspace",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 0,
+      "collapsible": 1,
+      "icon": "database",
+      "indent": 1,
+      "keep_closed": 1,
+      "label": "Master Data & Transactions",
+      "link_to": "",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Section Break"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Donor Compliance",
+      "link_to": "PMO Donor Compliance",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Donor Report",
+      "link_to": "PMO Donor Report",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Fund Reconciliation",
+      "link_to": "PMO Fund Reconciliation",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Grant",
+      "link_to": "PMO Grant",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Grant Agreement",
+      "link_to": "PMO Grant Agreement",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Grant Budget",
+      "link_to": "PMO Grant Budget",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Grant Disbursement",
+      "link_to": "PMO Grant Disbursement",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Grant Reporting",
+      "link_to": "PMO Grant Reporting",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Grant Utilization",
+      "link_to": "PMO Grant Utilization",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Restricted Fund",
+      "link_to": "PMO Restricted Fund",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Utilization Certificate",
+      "link_to": "PMO Utilization Certificate",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    }
+  ],
+  "module": "Grants Donor Management",
+  "name": "Grants & Donor Management",
+  "standard": 1,
+  "title": "Grants & Donor Management"
+}
