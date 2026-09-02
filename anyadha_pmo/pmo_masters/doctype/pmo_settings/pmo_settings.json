@@ -320,7 +320,6 @@
   "sort_field": "modified",
   "sort_order": "DESC",
   "states": [],
-  "title_field": "name",
   "read_only": 0,
   "hide_toolbar": 0,
   "track_changes": 1
