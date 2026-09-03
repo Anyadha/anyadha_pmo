@@ -10,7 +10,7 @@
       "indent": 0,
       "keep_closed": 0,
       "label": "Home",
-      "link_to": "Proposal & DPR",
+      "link_to": "Grants and Donor Management",
       "link_type": "Workspace",
       "show_arrow": 0,
       "type": "Link"
@@ -32,8 +32,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "DPR",
-      "link_to": "PMO DPR",
+      "label": "Donor Compliance",
+      "link_to": "PMO Donor Compliance",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -43,8 +43,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "DPR Approval",
-      "link_to": "PMO DPR Approval",
+      "label": "Donor Report",
+      "link_to": "PMO Donor Report",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -54,8 +54,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "DPR Section",
-      "link_to": "PMO DPR Section",
+      "label": "Fund Reconciliation",
+      "link_to": "PMO Fund Reconciliation",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -65,8 +65,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Opportunity",
-      "link_to": "PMO Opportunity",
+      "label": "Grant",
+      "link_to": "PMO Grant",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -76,8 +76,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Proposal",
-      "link_to": "PMO Proposal",
+      "label": "Grant Agreement",
+      "link_to": "PMO Grant Agreement",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -87,8 +87,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Proposal Approval",
-      "link_to": "PMO Proposal Approval",
+      "label": "Grant Budget",
+      "link_to": "PMO Grant Budget",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -98,15 +98,59 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Proposal Evaluation",
-      "link_to": "PMO Proposal Evaluation",
+      "label": "Grant Disbursement",
+      "link_to": "PMO Grant Disbursement",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Grant Reporting",
+      "link_to": "PMO Grant Reporting",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Grant Utilization",
+      "link_to": "PMO Grant Utilization",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Restricted Fund",
+      "link_to": "PMO Restricted Fund",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Utilization Certificate",
+      "link_to": "PMO Utilization Certificate",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
     }
   ],
-  "module": "Proposal DPR",
-  "name": "Proposal & DPR",
+  "module": "Grants Donor Management",
+  "name": "Grants and Donor Management",
   "standard": 1,
-  "title": "Proposal & DPR"
+  "title": "Grants and Donor Management"
 }

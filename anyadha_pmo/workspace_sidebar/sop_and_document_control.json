@@ -10,7 +10,7 @@
       "indent": 0,
       "keep_closed": 0,
       "label": "Home",
-      "link_to": "SOP & Document Control",
+      "link_to": "SOP and Document Control",
       "link_type": "Workspace",
       "show_arrow": 0,
       "type": "Link"
@@ -117,7 +117,7 @@
     }
   ],
   "module": "SOP Document Control",
-  "name": "SOP & Document Control",
+  "name": "SOP and Document Control",
   "standard": 1,
-  "title": "SOP & Document Control"
+  "title": "SOP and Document Control"
 }

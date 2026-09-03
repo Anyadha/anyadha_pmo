@@ -10,7 +10,7 @@
       "indent": 0,
       "keep_closed": 0,
       "label": "Home",
-      "link_to": "Audit & Assurance",
+      "link_to": "Strategy and Portfolio",
       "link_type": "Workspace",
       "show_arrow": 0,
       "type": "Link"
@@ -32,8 +32,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Assurance Review",
-      "link_to": "PMO Assurance Review",
+      "label": "Portfolio",
+      "link_to": "PMO Portfolio",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -43,8 +43,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Audit Action",
-      "link_to": "PMO Audit Action",
+      "label": "Portfolio Project",
+      "link_to": "PMO Portfolio Project",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -54,8 +54,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Audit Area",
-      "link_to": "PMO Audit Area",
+      "label": "Portfolio Review",
+      "link_to": "PMO Portfolio Review",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -65,8 +65,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Audit Closure",
-      "link_to": "PMO Audit Closure",
+      "label": "Portfolio Risk",
+      "link_to": "PMO Portfolio Risk",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -76,8 +76,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Audit Engagement",
-      "link_to": "PMO Audit Engagement",
+      "label": "Strategic Initiative",
+      "link_to": "PMO Strategic Initiative",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -87,52 +87,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Audit Finding",
-      "link_to": "PMO Audit Finding",
-      "link_type": "DocType",
-      "show_arrow": 0,
-      "type": "Link"
-    },
-    {
-      "child": 1,
-      "collapsible": 1,
-      "indent": 0,
-      "keep_closed": 0,
-      "label": "Audit Observation",
-      "link_to": "PMO Audit Observation",
-      "link_type": "DocType",
-      "show_arrow": 0,
-      "type": "Link"
-    },
-    {
-      "child": 1,
-      "collapsible": 1,
-      "indent": 0,
-      "keep_closed": 0,
-      "label": "Audit Plan",
-      "link_to": "PMO Audit Plan",
-      "link_type": "DocType",
-      "show_arrow": 0,
-      "type": "Link"
-    },
-    {
-      "child": 1,
-      "collapsible": 1,
-      "indent": 0,
-      "keep_closed": 0,
-      "label": "Audit Recommendation",
-      "link_to": "PMO Audit Recommendation",
-      "link_type": "DocType",
-      "show_arrow": 0,
-      "type": "Link"
-    },
-    {
-      "child": 1,
-      "collapsible": 1,
-      "indent": 0,
-      "keep_closed": 0,
-      "label": "Audit Report",
-      "link_to": "PMO Audit Report",
+      "label": "Strategic Plan",
+      "link_to": "PMO Strategic Plan",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -154,15 +110,26 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Audit Findings",
-      "link_to": "PMO Audit Findings",
+      "label": "Portfolio Register",
+      "link_to": "PMO Portfolio Register",
+      "link_type": "Report",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Strategic Plan Register",
+      "link_to": "PMO Strategic Plan Register",
       "link_type": "Report",
       "show_arrow": 0,
       "type": "Link"
     }
   ],
-  "module": "Audit Assurance",
-  "name": "Audit & Assurance",
+  "module": "Strategy Portfolio",
+  "name": "Strategy and Portfolio",
   "standard": 1,
-  "title": "Audit & Assurance"
+  "title": "Strategy and Portfolio"
 }

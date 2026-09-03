@@ -10,7 +10,7 @@
       "indent": 0,
       "keep_closed": 0,
       "label": "Home",
-      "link_to": "Strategy & Portfolio",
+      "link_to": "Compliance and Regulatory",
       "link_type": "Workspace",
       "show_arrow": 0,
       "type": "Link"
@@ -32,8 +32,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Portfolio",
-      "link_to": "PMO Portfolio",
+      "label": "Compliance Action",
+      "link_to": "PMO Compliance Action",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -43,8 +43,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Portfolio Project",
-      "link_to": "PMO Portfolio Project",
+      "label": "Compliance Calendar",
+      "link_to": "PMO Compliance Calendar",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -54,8 +54,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Portfolio Review",
-      "link_to": "PMO Portfolio Review",
+      "label": "Compliance Certificate",
+      "link_to": "PMO Compliance Certificate",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -65,8 +65,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Portfolio Risk",
-      "link_to": "PMO Portfolio Risk",
+      "label": "Compliance Item",
+      "link_to": "PMO Compliance Item",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -76,8 +76,8 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Strategic Initiative",
-      "link_to": "PMO Strategic Initiative",
+      "label": "Compliance Obligation",
+      "link_to": "PMO Compliance Obligation",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -87,8 +87,63 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Strategic Plan",
-      "link_to": "PMO Strategic Plan",
+      "label": "Compliance Review",
+      "link_to": "PMO Compliance Review",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "License",
+      "link_to": "PMO License",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Non Compliance",
+      "link_to": "PMO Non Compliance",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Regulatory Filing",
+      "link_to": "PMO Regulatory Filing",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Regulatory Notice",
+      "link_to": "PMO Regulatory Notice",
+      "link_type": "DocType",
+      "show_arrow": 0,
+      "type": "Link"
+    },
+    {
+      "child": 1,
+      "collapsible": 1,
+      "indent": 0,
+      "keep_closed": 0,
+      "label": "Statutory Registration",
+      "link_to": "PMO Statutory Registration",
       "link_type": "DocType",
       "show_arrow": 0,
       "type": "Link"
@@ -110,26 +165,15 @@
       "collapsible": 1,
       "indent": 0,
       "keep_closed": 0,
-      "label": "Portfolio Register",
-      "link_to": "PMO Portfolio Register",
-      "link_type": "Report",
-      "show_arrow": 0,
-      "type": "Link"
-    },
-    {
-      "child": 1,
-      "collapsible": 1,
-      "indent": 0,
-      "keep_closed": 0,
-      "label": "Strategic Plan Register",
-      "link_to": "PMO Strategic Plan Register",
+      "label": "Compliance Status",
+      "link_to": "PMO Compliance Status",
       "link_type": "Report",
       "show_arrow": 0,
       "type": "Link"
     }
   ],
-  "module": "Strategy Portfolio",
-  "name": "Strategy & Portfolio",
+  "module": "Compliance Regulatory",
+  "name": "Compliance and Regulatory",
   "standard": 1,
-  "title": "Strategy & Portfolio"
+  "title": "Compliance and Regulatory"
 }
