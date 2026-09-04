@@ -1,5 +1,6 @@
 import frappe
 
+from anyadha_pmo.config.desktop import sync_pmo_desktop_icons
 from anyadha_pmo.security.roles import PMO_ROLES
 
 
@@ -9,6 +10,7 @@ def ensure_roles():
     Existing roles are never overwritten. This makes installation and
     migration idempotent and safe for an already-running site.
     """
+
     for role_name, desk_access in PMO_ROLES:
         if not frappe.db.exists("Role", role_name):
             frappe.get_doc(
@@ -24,7 +26,9 @@ def ensure_roles():
 
 def after_install():
     ensure_roles()
+    sync_pmo_desktop_icons()
 
 
 def after_migrate():
     ensure_roles()
+    sync_pmo_desktop_icons()
