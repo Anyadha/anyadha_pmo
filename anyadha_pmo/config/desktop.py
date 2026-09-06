@@ -32,6 +32,9 @@ def sync_pmo_desktop_icons():
             icon = frappe.get_doc("Desktop Icon", icon_name)
 
             changed = False
+            if icon.parent_icon != "Anyadha PMO":
+                icon.parent_icon = "Anyadha PMO"
+                changed = True
 
             if icon.icon != workspace.icon:
                 icon.icon = workspace.icon
@@ -52,6 +55,7 @@ def sync_pmo_desktop_icons():
                     "icon_type": "Link",
                     "link_type": "Workspace Sidebar",
                     "link_to": workspace.name,
+                    "parent_icon": "Anyadha PMO",
                     "icon": workspace.icon,
                     "standard": 0,
                     "hidden": 0,
