@@ -1,0 +1,12 @@
+{
+  "app": "anyadha_pmo",
+  "doctype": "Desktop Icon",
+  "hidden": 0,
+  "icon_type": "App",
+  "label": "Anyadha PMO",
+  "link": "/desk/executive-pmo",
+  "link_type": "External",
+  "logo_url": "/assets/anyadha_pmo/images/anyadha-pmo-logo.svg",
+  "name": "Anyadha PMO",
+  "standard": 1
+}

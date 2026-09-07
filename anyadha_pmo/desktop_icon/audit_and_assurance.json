@@ -1,0 +1,15 @@
+{
+  "app": "anyadha_pmo",
+  "doctype": "Desktop Icon",
+  "hidden": 0,
+  "icon": "",
+  "icon_type": "Link",
+  "label": "Audit and Assurance",
+  "link_to": "Audit and Assurance",
+  "link_type": "Workspace Sidebar",
+  "name": "Audit and Assurance",
+  "parent_icon": "Anyadha PMO",
+  "restrict_removal": 0,
+  "roles": [],
+  "standard": 1
+}

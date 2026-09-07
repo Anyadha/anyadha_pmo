@@ -1,0 +1,15 @@
+{
+  "app": "anyadha_pmo",
+  "doctype": "Desktop Icon",
+  "hidden": 0,
+  "icon": "",
+  "icon_type": "Link",
+  "label": "Proposal and DPR",
+  "link_to": "Proposal and DPR",
+  "link_type": "Workspace Sidebar",
+  "name": "Proposal and DPR",
+  "parent_icon": "Anyadha PMO",
+  "restrict_removal": 0,
+  "roles": [],
+  "standard": 1
+}

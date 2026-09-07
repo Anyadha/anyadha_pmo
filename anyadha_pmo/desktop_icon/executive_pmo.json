@@ -1,0 +1,15 @@
+{
+  "app": "anyadha_pmo",
+  "doctype": "Desktop Icon",
+  "hidden": 0,
+  "icon": "",
+  "icon_type": "Link",
+  "label": "Executive PMO",
+  "link_to": "Executive PMO",
+  "link_type": "Workspace Sidebar",
+  "name": "Executive PMO",
+  "parent_icon": "Anyadha PMO",
+  "restrict_removal": 0,
+  "roles": [],
+  "standard": 1
+}

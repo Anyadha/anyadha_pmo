@@ -1,0 +1,15 @@
+{
+  "app": "anyadha_pmo",
+  "doctype": "Desktop Icon",
+  "hidden": 0,
+  "icon": "",
+  "icon_type": "Link",
+  "label": "SOP and Document Control",
+  "link_to": "SOP and Document Control",
+  "link_type": "Workspace Sidebar",
+  "name": "SOP and Document Control",
+  "parent_icon": "Anyadha PMO",
+  "restrict_removal": 0,
+  "roles": [],
+  "standard": 1
+}

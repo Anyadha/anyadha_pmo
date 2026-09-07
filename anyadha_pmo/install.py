@@ -1,6 +1,5 @@
 import frappe
 
-from anyadha_pmo.config.desktop import sync_pmo_desktop_icons
 from anyadha_pmo.security.roles import PMO_ROLES
 
 
@@ -26,9 +25,7 @@ def ensure_roles():
 
 def after_install():
     ensure_roles()
-    sync_pmo_desktop_icons()
 
 
 def after_migrate():
     ensure_roles()
-    sync_pmo_desktop_icons()
