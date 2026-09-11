@@ -30,9 +30,3 @@ add_to_apps_screen = [
         "sequence_id": 10,
     }
 ]
-
-extend_doctype_class = {
-    "Purchase Order": [
-        "anyadha_pmo.overrides.purchase_order_portal.PurchaseOrderPortalMixin"
-    ]
-}
