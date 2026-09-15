@@ -20,6 +20,15 @@ app_logo_url = "/assets/anyadha_pmo/images/anyadha-pmo-logo.svg"
 
 app_home = "/desk/executive-pmo"
 
+# Supplier portal RFQ quotation attachment customization
+web_include_js = ["/assets/anyadha_pmo/js/supplier_rfq_quotation.js"]
+
+# Supplier portal access to its own submitted Purchase Orders only
+
+extend_doctype_class = {
+    "Purchase Order": ["anyadha_pmo.overrides.purchase_order_portal.PurchaseOrderPortalMixin"],
+}
+
 add_to_apps_screen = [
     {
         "name": app_name,
