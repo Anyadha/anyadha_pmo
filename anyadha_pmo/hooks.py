@@ -20,7 +20,6 @@ app_logo_url = "/assets/anyadha_pmo/images/anyadha-pmo-logo.svg"
 
 app_home = "/desk/executive-pmo"
 
-# Supplier portal RFQ quotation attachment customization
 web_include_js = ["/assets/anyadha_pmo/js/supplier_rfq_quotation.js"]
 
 add_to_apps_screen = [
