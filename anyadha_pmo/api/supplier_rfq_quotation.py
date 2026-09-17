@@ -9,7 +9,7 @@ import frappe
 from frappe import _
 from frappe.utils import flt
 
-from erpnext.buying.doctype.request_for_quotation.mapper import (
+from erpnext.buying.doctype.request_for_quotation.request_for_quotation import (
 	make_supplier_quotation_from_rfq,
 	validate_existing_supplier_quotation,
 )
@@ -51,7 +51,18 @@ def create_supplier_quotation_with_attachment(doc: str | dict | None = None):
 	# Start from ERPNext's standard RFQ-to-Supplier-Quotation mapping.  This
 	# preserves all standard fields and references; only editable portal values
 	# are overlaid after the server has verified their RFQ item identities.
-	sq = make_supplier_quotation_from_rfq(rfq.name, for_supplier=supplier)
+	# ``make_supplier_quotation_from_rfq`` runs its own doctype-level
+	# permission check (via get_mapped_doc) before returning, and the portal
+	# user intentionally has no Desk create permission for Supplier Quotation.
+	# Authorization for *this* supplier/RFQ pair was already verified above,
+	# so elevate only for this mapping call.
+	portal_user = frappe.session.user
+	try:
+		frappe.set_user("Administrator")
+		sq = make_supplier_quotation_from_rfq(rfq.name, for_supplier=supplier)
+	finally:
+		frappe.set_user(portal_user)
+
 	sq.terms = payload.get("terms") or ""
 
 	for row in sq.items:
@@ -64,6 +75,10 @@ def create_supplier_quotation_with_attachment(doc: str | dict | None = None):
 	sq.flags.ignore_permissions = True
 	sq.save()
 
+	attachment_content = frappe.local.uploaded_file
+	if os.path.splitext(frappe.local.uploaded_filename)[1].lower() == ".pdf":
+		attachment_content = _compress_pdf_if_possible(attachment_content)
+
 	frappe.get_doc(
 		{
 			"doctype": "File",
@@ -71,7 +86,7 @@ def create_supplier_quotation_with_attachment(doc: str | dict | None = None):
 			"attached_to_doctype": "Supplier Quotation",
 			"attached_to_name": sq.name,
 			"is_private": 1,
-			"content": frappe.local.uploaded_file,
+			"content": attachment_content,
 		}
 	).save(ignore_permissions=True)
 
@@ -129,3 +144,34 @@ def _validate_upload():
 
 	if os.path.splitext(filename)[1].lower() not in ALLOWED_EXTENSIONS:
 		frappe.throw(_("Attach a PDF, Excel, or Word quotation document."))
+
+
+def _compress_pdf_if_possible(content: bytes) -> bytes:
+	"""Best-effort content-stream compression for PDF uploads.
+
+	Falls back to the original bytes for encrypted, malformed, or
+	non-shrinking PDFs so an upload is never blocked by compression.
+	"""
+	from io import BytesIO
+
+	try:
+		from pypdf import PdfReader, PdfWriter
+
+		reader = PdfReader(BytesIO(content))
+		if reader.is_encrypted:
+			return content
+
+		writer = PdfWriter()
+		for page in reader.pages:
+			writer.add_page(page)
+		for page in writer.pages:
+			page.compress_content_streams()
+
+		buffer = BytesIO()
+		writer.write(buffer)
+		compressed = buffer.getvalue()
+	except Exception:
+		frappe.log_error(title="Supplier quotation PDF compression failed")
+		return content
+
+	return compressed if len(compressed) < len(content) else content

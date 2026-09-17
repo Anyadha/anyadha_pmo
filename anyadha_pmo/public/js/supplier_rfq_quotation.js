@@ -1,4 +1,11 @@
-/* Required quotation-document step for the standard ERPNext supplier RFQ page. */
+/* Required quotation-document step for the standard ERPNext supplier RFQ page.
+ *
+ * Website/portal pages only load frappe-web.bundle.js + bootstrap-4-web.bundle.js,
+ * not the desk form-control library, so frappe.ui.Dialog cannot be used here
+ * (frappe.ui.form.make_control is undefined on this bundle). The attach dialog
+ * is built as a plain Bootstrap 4 modal instead, the same pattern Frappe's own
+ * website discussion modal uses (frappe/templates/discussions/discussions.js).
+ */
 (function () {
 	"use strict";
 
@@ -23,10 +30,30 @@
 		};
 	}
 
-	function submitWithAttachment(dialog, button) {
-		var input = dialog.$wrapper.find(".anyadha-quotation-file")[0];
+	function refreshSubmitButtonState($modal, $submitBtn) {
+		var input = $modal.find(".anyadha-quotation-file")[0];
+		var has_file = !!(input && input.files && input.files.length);
+		var $label = $modal.find(".anyadha-quotation-file-label");
+		var $hint = $modal.find(".anyadha-quotation-hint");
+
+		$submitBtn.prop("disabled", !has_file);
+		$submitBtn.attr("title", has_file ? "" : __("Please attach a quotation PDF with your company letterhead before creating the quotation."));
+
+		if (has_file) {
+			$label.text(input.files[0].name).removeClass("text-muted").addClass("text-dark");
+			$hint.removeClass("alert-warning").addClass("alert-success")
+				.html('<i class="fa fa-check-circle mr-1"></i>' + __("Ready to submit: {0}", [$("<div>").text(input.files[0].name).html()]));
+		} else {
+			$label.text(__("Choose file...")).removeClass("text-dark").addClass("text-muted");
+			$hint.removeClass("alert-success").addClass("alert-warning")
+				.html('<i class="fa fa-exclamation-triangle mr-1"></i>' + __("Please attach a quotation PDF with your company letterhead before creating the quotation."));
+		}
+	}
+
+	function submitWithAttachment($modal, $submitBtn) {
+		var input = $modal.find(".anyadha-quotation-file")[0];
 		if (!input || !input.files || !input.files.length) {
-			frappe.msgprint(__("Please attach your quotation document."));
+			frappe.msgprint(__("Please attach a quotation PDF with your company letterhead before creating the quotation."));
 			return;
 		}
 
@@ -35,7 +62,7 @@
 		formData.append("method", "anyadha_pmo.api.supplier_rfq_quotation.create_supplier_quotation_with_attachment");
 		formData.append("doc", JSON.stringify(makePayload()));
 
-		button.prop("disabled", true);
+		$submitBtn.prop("disabled", true);
 		frappe.freeze(__("Creating Supplier Quotation..."));
 		$.ajax({
 			url: "/api/method/upload_file",
@@ -47,7 +74,7 @@
 			success: function (response) {
 				var quotationName = response.message;
 				if (quotationName) {
-					dialog.hide();
+					$modal.modal("hide");
 					window.location.href = "/supplier-quotations/" + encodeURIComponent(quotationName);
 				}
 			},
@@ -61,7 +88,7 @@
 					} catch (ignore) {}
 				}
 				frappe.msgprint(message);
-				button.prop("disabled", false);
+				$submitBtn.prop("disabled", false);
 			},
 			complete: function () {
 				frappe.unfreeze();
@@ -70,20 +97,55 @@
 	}
 
 	function showAttachmentDialog() {
-		var dialog = new frappe.ui.Dialog({
-			title: __("Attach Your Quotation"),
-			fields: [{
-				fieldtype: "HTML",
-				fieldname: "quotation_file_html",
-				options: '<p class="text-muted">' + __("Upload the quotation document before creating the draft quotation.") + '</p>' +
-					'<input class="anyadha-quotation-file" type="file" accept=".pdf,.xls,.xlsx,.doc,.docx" required>'
-			}],
-			primary_action_label: __("Make Quotation"),
-			primary_action: function () {
-				submitWithAttachment(dialog, dialog.get_primary_btn());
-			}
+		// Remove any previous instance so repeated opens don't stack modal-backdrops.
+		$(".anyadha-quotation-modal").remove();
+
+		var $modal = $(
+			'<div class="modal fade anyadha-quotation-modal" tabindex="-1" role="dialog" aria-labelledby="anyadhaQuotationModalTitle" aria-hidden="true">' +
+				'<div class="modal-dialog modal-dialog-centered" role="document">' +
+					'<div class="modal-content">' +
+						'<div class="modal-header bg-light">' +
+							'<h5 class="modal-title" id="anyadhaQuotationModalTitle">' +
+								'<i class="fa fa-paperclip text-muted mr-2"></i>' + __("Attach Your Quotation") +
+							'</h5>' +
+							'<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
+						'</div>' +
+						'<div class="modal-body">' +
+							'<p>' + __("Upload a quotation PDF with your company letterhead before creating the draft quotation.") + '</p>' +
+							'<div class="custom-file mb-3">' +
+								'<input type="file" class="custom-file-input anyadha-quotation-file" accept=".pdf,.xls,.xlsx,.doc,.docx" required>' +
+								'<label class="custom-file-label anyadha-quotation-file-label text-muted" for="">' + __("Choose file...") + '</label>' +
+							'</div>' +
+							'<small class="form-text text-muted mb-3 d-block">' + __("Accepted formats: PDF, XLS, XLSX, DOC, DOCX") + '</small>' +
+							'<div class="alert alert-warning anyadha-quotation-hint mb-0 py-2 px-3 small">' +
+								'<i class="fa fa-exclamation-triangle mr-1"></i>' +
+								__("Please attach a quotation PDF with your company letterhead before creating the quotation.") +
+							'</div>' +
+						'</div>' +
+						'<div class="modal-footer">' +
+							'<button type="button" class="btn btn-secondary" data-dismiss="modal">' + __("Cancel") + '</button>' +
+							'<button type="button" class="btn btn-primary anyadha-quotation-submit" disabled>' +
+								'<i class="fa fa-check mr-1"></i>' + __("Make Quotation") +
+							'</button>' +
+						'</div>' +
+					'</div>' +
+				'</div>' +
+			'</div>'
+		).appendTo("body");
+
+		var $submitBtn = $modal.find(".anyadha-quotation-submit");
+
+		$modal.on("change", ".anyadha-quotation-file", function () {
+			refreshSubmitButtonState($modal, $submitBtn);
 		});
-		dialog.show();
+		$submitBtn.on("click", function () {
+			submitWithAttachment($modal, $submitBtn);
+		});
+		$modal.on("hidden.bs.modal", function () {
+			$modal.remove();
+		});
+
+		$modal.modal("show");
 	}
 
 	function replaceStandardHandler() {
