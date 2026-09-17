@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import math
 import os
+from contextlib import contextmanager
 
 import frappe
 from frappe import _
@@ -56,12 +57,8 @@ def create_supplier_quotation_with_attachment(doc: str | dict | None = None):
 	# user intentionally has no Desk create permission for Supplier Quotation.
 	# Authorization for *this* supplier/RFQ pair was already verified above,
 	# so elevate only for this mapping call.
-	portal_user = frappe.session.user
-	try:
-		frappe.set_user("Administrator")
+	with _elevated_permission_user():
 		sq = make_supplier_quotation_from_rfq(rfq.name, for_supplier=supplier)
-	finally:
-		frappe.set_user(portal_user)
 
 	sq.terms = payload.get("terms") or ""
 
@@ -92,6 +89,29 @@ def create_supplier_quotation_with_attachment(doc: str | dict | None = None):
 
 	frappe.msgprint(_("Supplier Quotation {0} Created").format(sq.name))
 	return sq.name
+
+
+@contextmanager
+def _elevated_permission_user():
+	"""Run permission checks as Administrator without disturbing the request's session.
+
+	``frappe.set_user()`` is unsafe for a temporary elevate/restore here: besides
+	``session.user`` it also overwrites ``session.sid`` with the literal username
+	and wipes ``session.data``. Restoring with ``frappe.set_user(portal_user)``
+	afterward would then leave ``session.sid`` set to the portal user's *name*
+	instead of their real (random) session id, corrupting the session record
+	written back at the end of the request and effectively logging them out.
+	Only the fields permission checks actually consult are swapped here.
+	"""
+	original_user = frappe.local.session.user
+	original_user_perms = frappe.local.user_perms
+	frappe.local.session.user = "Administrator"
+	frappe.local.user_perms = None
+	try:
+		yield
+	finally:
+		frappe.local.session.user = original_user
+		frappe.local.user_perms = original_user_perms
 
 
 def _get_authorized_supplier(rfq):
