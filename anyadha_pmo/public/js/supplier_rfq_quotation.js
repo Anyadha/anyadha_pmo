@@ -37,7 +37,7 @@
 		var $hint = $modal.find(".anyadha-quotation-hint");
 
 		$submitBtn.prop("disabled", !has_file);
-		$submitBtn.attr("title", has_file ? "" : __("Please attach a quotation PDF with your company letterhead before creating the quotation."));
+		$submitBtn.attr("title", has_file ? "" : __("Please attach your quotation document (PDF, Excel, Word, or image) before creating the quotation."));
 
 		if (has_file) {
 			$label.text(input.files[0].name).removeClass("text-muted").addClass("text-dark");
@@ -46,14 +46,14 @@
 		} else {
 			$label.text(__("Choose file...")).removeClass("text-dark").addClass("text-muted");
 			$hint.removeClass("alert-success").addClass("alert-warning")
-				.html('<i class="fa fa-exclamation-triangle mr-1"></i>' + __("Please attach a quotation PDF with your company letterhead before creating the quotation."));
+				.html('<i class="fa fa-exclamation-triangle mr-1"></i>' + __("Please attach your quotation document (PDF, Excel, Word, or image) before creating the quotation."));
 		}
 	}
 
 	function submitWithAttachment($modal, $submitBtn) {
 		var input = $modal.find(".anyadha-quotation-file")[0];
 		if (!input || !input.files || !input.files.length) {
-			frappe.msgprint(__("Please attach a quotation PDF with your company letterhead before creating the quotation."));
+			frappe.msgprint(__("Please attach your quotation document (PDF, Excel, Word, or image) before creating the quotation."));
 			return;
 		}
 
@@ -75,7 +75,11 @@
 				var quotationName = response.message;
 				if (quotationName) {
 					$modal.modal("hide");
-					window.location.href = "/supplier-quotations/" + encodeURIComponent(quotationName);
+					frappe.show_alert({
+						message: __("Supplier Quotation {0} created", [quotationName]),
+						indicator: "green"
+					});
+					window.location.href = "/rfq";
 				}
 			},
 			error: function (xhr) {
@@ -111,15 +115,15 @@
 							'<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>' +
 						'</div>' +
 						'<div class="modal-body">' +
-							'<p>' + __("Upload a quotation PDF with your company letterhead before creating the draft quotation.") + '</p>' +
+							'<p>' + __("Upload your quotation document (PDF, Excel, Word, or image) before creating the draft quotation.") + '</p>' +
 							'<div class="custom-file mb-3">' +
-								'<input type="file" class="custom-file-input anyadha-quotation-file" accept=".pdf,.xls,.xlsx,.doc,.docx" required>' +
+								'<input type="file" class="custom-file-input anyadha-quotation-file" accept=".pdf,.xls,.xlsx,.doc,.docx,.jpg,.jpeg,.png" required>' +
 								'<label class="custom-file-label anyadha-quotation-file-label text-muted" for="">' + __("Choose file...") + '</label>' +
 							'</div>' +
-							'<small class="form-text text-muted mb-3 d-block">' + __("Accepted formats: PDF, XLS, XLSX, DOC, DOCX") + '</small>' +
+							'<small class="form-text text-muted mb-3 d-block">' + __("Accepted formats: PDF, XLS, XLSX, DOC, DOCX, JPG, PNG") + '</small>' +
 							'<div class="alert alert-warning anyadha-quotation-hint mb-0 py-2 px-3 small">' +
 								'<i class="fa fa-exclamation-triangle mr-1"></i>' +
-								__("Please attach a quotation PDF with your company letterhead before creating the quotation.") +
+								__("Please attach your quotation document (PDF, Excel, Word, or image) before creating the quotation.") +
 							'</div>' +
 						'</div>' +
 						'<div class="modal-footer">' +

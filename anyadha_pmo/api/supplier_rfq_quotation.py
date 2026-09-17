@@ -15,7 +15,7 @@ from erpnext.buying.doctype.request_for_quotation.request_for_quotation import (
 )
 
 
-ALLOWED_EXTENSIONS = {".pdf", ".xls", ".xlsx", ".doc", ".docx"}
+ALLOWED_EXTENSIONS = {".pdf", ".xls", ".xlsx", ".doc", ".docx", ".jpg", ".jpeg", ".png"}
 
 
 @frappe.whitelist(methods=["POST"])
@@ -143,7 +143,7 @@ def _validate_upload():
 		frappe.throw(_("Please attach your quotation document."))
 
 	if os.path.splitext(filename)[1].lower() not in ALLOWED_EXTENSIONS:
-		frappe.throw(_("Attach a PDF, Excel, or Word quotation document."))
+		frappe.throw(_("Attach a PDF, Excel, Word, or image (JPG/PNG) quotation document."))
 
 
 def _compress_pdf_if_possible(content: bytes) -> bytes:
