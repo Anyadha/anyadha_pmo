@@ -41,6 +41,95 @@
       "label": "Status",
       "fieldtype": "Select",
       "options": "Draft\nOpen\nIn Progress\nPending Approval\nApproved\nRejected\nCompleted\nClosed\nCancelled"
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company"
+    },
+    {
+      "fieldname": "entity",
+      "label": "PMO Entity",
+      "fieldtype": "Link",
+      "options": "PMO Entity"
+    },
+    {
+      "fieldname": "business_unit",
+      "label": "Business Unit",
+      "fieldtype": "Link",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "authority_matrix",
+      "label": "Authority Matrix",
+      "fieldtype": "Link",
+      "options": "PMO Authority Matrix"
+    },
+    {
+      "fieldname": "approval_amount",
+      "label": "Approval Amount",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "approval_currency",
+      "label": "Approval Currency",
+      "fieldtype": "Link",
+      "options": "Currency"
+    },
+    {
+      "fieldname": "current_sequence",
+      "label": "Current Sequence",
+      "fieldtype": "Int",
+      "default": 1
+    },
+    {
+      "fieldname": "final_decision",
+      "label": "Final Decision",
+      "fieldtype": "Select",
+      "options": "Pending\nApproved\nRejected\nReturned\nCancelled"
+    },
+    {
+      "fieldname": "completed_on",
+      "label": "Completed On",
+      "fieldtype": "Datetime"
+    },
+    {
+      "fieldname": "remarks",
+      "label": "Remarks",
+      "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "evidence_required",
+      "label": "Evidence Required",
+      "fieldtype": "Check",
+      "default": 0
+    },
+    {
+      "fieldname": "evidence_complete",
+      "label": "Evidence Complete",
+      "fieldtype": "Check",
+      "default": 0
+    },
+    {
+      "fieldname": "override_used",
+      "label": "Override Used",
+      "fieldtype": "Check",
+      "default": 0,
+      "read_only": 1
+    },
+    {
+      "fieldname": "override_reason",
+      "label": "Override Reason",
+      "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "workflow_state",
+      "label": "Workflow State",
+      "fieldtype": "Data",
+      "read_only": 1,
+      "no_copy": 1,
+      "allow_on_submit": 1
     }
   ],
   "permissions": [
@@ -67,7 +156,7 @@
       "share": 0
     },
     {
-      "role": "Executive / Management",
+      "role": "PMO Officer",
       "read": 1,
       "write": 1,
       "create": 1,
@@ -78,7 +167,7 @@
       "share": 0
     },
     {
-      "role": "Board Member",
+      "role": "PMO Governance Manager",
       "read": 1,
       "write": 1,
       "create": 1,
@@ -87,6 +176,17 @@
       "email": 1,
       "export": 1,
       "share": 0
+    },
+    {
+      "role": "Executive / Management",
+      "read": 1,
+      "print": 1,
+      "export": 1
+    },
+    {
+      "role": "Board Member",
+      "read": 1,
+      "print": 1
     },
     {
       "role": "System Manager",
@@ -99,5 +199,28 @@
       "export": 1,
       "share": 1
     }
+  ],
+  "field_order": [
+    "request_type",
+    "reference_doctype",
+    "reference_name",
+    "requested_by",
+    "requested_on",
+    "status",
+    "company",
+    "entity",
+    "business_unit",
+    "authority_matrix",
+    "approval_amount",
+    "approval_currency",
+    "current_sequence",
+    "final_decision",
+    "completed_on",
+    "remarks",
+    "evidence_required",
+    "evidence_complete",
+    "override_used",
+    "override_reason",
+    "workflow_state"
   ]
 }

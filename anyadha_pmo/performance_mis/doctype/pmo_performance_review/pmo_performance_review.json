@@ -40,6 +40,53 @@
       "fieldname": "actions",
       "label": "Actions",
       "fieldtype": "Text Editor"
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company"
+    },
+    {
+      "fieldname": "business_unit",
+      "label": "Business Unit",
+      "fieldtype": "Link",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "project",
+      "label": "Project",
+      "fieldtype": "Link",
+      "options": "PMO Project"
+    },
+    {
+      "fieldname": "programme",
+      "label": "Programme",
+      "fieldtype": "Link",
+      "options": "PMO Programme"
+    },
+    {
+      "fieldname": "review_owner",
+      "label": "Review Owner",
+      "fieldtype": "Link",
+      "options": "Employee"
+    },
+    {
+      "fieldname": "workflow_state",
+      "label": "Workflow State",
+      "fieldtype": "Data",
+      "read_only": 1
+    },
+    {
+      "fieldname": "decision",
+      "label": "Management Decision",
+      "fieldtype": "Select",
+      "options": "No Action\nAction Required\nEscalate\nAccepted"
+    },
+    {
+      "fieldname": "evidence",
+      "label": "Evidence",
+      "fieldtype": "Attach"
     }
   ],
   "permissions": [

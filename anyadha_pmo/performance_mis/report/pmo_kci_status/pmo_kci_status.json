@@ -1,0 +1,45 @@
+{
+  "add_total_row": 0,
+  "add_translate_data": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "filters": [],
+  "idx": 0,
+  "is_standard": "Yes",
+  "module": "Performance MIS",
+  "name": "PMO KCI Status",
+  "owner": "Administrator",
+  "prepared_report": 0,
+  "query": "SELECT name AS \"KCI:Link/PMO KCI:200\", kci_name AS \"KCI Name:Data:220\", control AS \"Control:Link/PMO Control:180\", current_value AS \"Current:Float:110\", threshold AS \"Threshold:Float:110\", status AS \"Status:Data:100\", measurement_date AS \"Measurement Date:Date:120\" FROM `tabPMO KCI` ORDER BY FIELD(status, 'Red','Amber','Green'), kci_name",
+  "ref_doctype": "PMO KCI",
+  "report_name": "PMO KCI Status",
+  "report_type": "Query Report",
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Executive / Management"
+    },
+    {
+      "role": "M&E Manager"
+    },
+    {
+      "role": "M&E Officer"
+    },
+    {
+      "role": "Programme Manager"
+    },
+    {
+      "role": "Project Manager"
+    }
+  ],
+  "doctype": "Report"
+}

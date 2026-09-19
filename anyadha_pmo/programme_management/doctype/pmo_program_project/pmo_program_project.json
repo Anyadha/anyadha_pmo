@@ -41,6 +41,17 @@
       "fieldname": "end_date",
       "label": "End Date",
       "fieldtype": "Date"
+    },
+    {
+      "fieldname": "priority",
+      "label": "Priority",
+      "fieldtype": "Select",
+      "options": "Low\nMedium\nHigh\nCritical"
+    },
+    {
+      "fieldname": "strategic_alignment",
+      "label": "Strategic Alignment %",
+      "fieldtype": "Percent"
     }
   ],
   "permissions": [

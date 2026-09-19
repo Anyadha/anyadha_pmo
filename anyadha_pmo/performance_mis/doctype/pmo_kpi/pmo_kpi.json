@@ -40,6 +40,55 @@
       "label": "Frequency",
       "fieldtype": "Select",
       "options": "Monthly\nQuarterly\nAnnual"
+    },
+    {
+      "fieldname": "section_performance",
+      "label": "Performance Definition",
+      "fieldtype": "Section Break"
+    },
+    {
+      "fieldname": "description",
+      "label": "Description",
+      "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "direction",
+      "label": "Performance Direction",
+      "fieldtype": "Select",
+      "options": "Higher is Better\nLower is Better\nTarget Range"
+    },
+    {
+      "fieldname": "owner",
+      "label": "KPI Owner",
+      "fieldtype": "Link",
+      "options": "Employee"
+    },
+    {
+      "fieldname": "data_source",
+      "label": "Data Source",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "calculation_method",
+      "label": "Calculation Method",
+      "fieldtype": "Select",
+      "options": "Manual\nFormula\nERPNext Transaction\nM&E Reading\nExternal Source"
+    },
+    {
+      "fieldname": "active",
+      "label": "Active",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "effective_from",
+      "label": "Effective From",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "effective_to",
+      "label": "Effective To",
+      "fieldtype": "Date"
     }
   ],
   "permissions": [

@@ -21,6 +21,48 @@
       "options": "Company"
     },
     {
+      "fieldname": "entity",
+      "label": "PMO Entity",
+      "fieldtype": "Link",
+      "options": "PMO Entity"
+    },
+    {
+      "fieldname": "business_unit",
+      "label": "Business Unit",
+      "fieldtype": "Link",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "priority",
+      "label": "Priority",
+      "fieldtype": "Int",
+      "default": 1
+    },
+    {
+      "fieldname": "approved_by",
+      "label": "Approved By",
+      "fieldtype": "Link",
+      "options": "User",
+      "read_only": 1
+    },
+    {
+      "fieldname": "approved_on",
+      "label": "Approved On",
+      "fieldtype": "Datetime",
+      "read_only": 1
+    },
+    {
+      "fieldname": "supersedes_matrix",
+      "label": "Supersedes Matrix",
+      "fieldtype": "Link",
+      "options": "PMO Authority Matrix"
+    },
+    {
+      "fieldname": "notes",
+      "label": "Notes",
+      "fieldtype": "Small Text"
+    },
+    {
       "fieldname": "effective_from",
       "label": "Effective From",
       "fieldtype": "Date",
@@ -41,7 +83,8 @@
       "fieldname": "status",
       "label": "Status",
       "fieldtype": "Select",
-      "options": "Draft\nOpen\nIn Progress\nPending Approval\nApproved\nRejected\nCompleted\nClosed\nCancelled"
+      "options": "Draft\nActive\nSuperseded\nExpired\nCancelled",
+      "default": "Draft"
     }
   ],
   "permissions": [
@@ -52,7 +95,6 @@
       "create": 1,
       "delete": 0,
       "print": 1,
-      "email": 1,
       "export": 1,
       "share": 0
     },
@@ -63,29 +105,16 @@
       "create": 1,
       "delete": 0,
       "print": 1,
-      "email": 1,
       "export": 1,
       "share": 0
     },
     {
-      "role": "Executive / Management",
+      "role": "PMO Governance Manager",
       "read": 1,
       "write": 1,
       "create": 1,
       "delete": 0,
       "print": 1,
-      "email": 1,
-      "export": 1,
-      "share": 0
-    },
-    {
-      "role": "Board Member",
-      "read": 1,
-      "write": 1,
-      "create": 1,
-      "delete": 0,
-      "print": 1,
-      "email": 1,
       "export": 1,
       "share": 0
     },
@@ -96,9 +125,23 @@
       "create": 1,
       "delete": 1,
       "print": 1,
-      "email": 1,
       "export": 1,
       "share": 1
     }
+  ],
+  "field_order": [
+    "matrix_name",
+    "company",
+    "entity",
+    "business_unit",
+    "priority",
+    "approved_by",
+    "approved_on",
+    "supersedes_matrix",
+    "notes",
+    "effective_from",
+    "effective_to",
+    "version",
+    "status"
   ]
 }

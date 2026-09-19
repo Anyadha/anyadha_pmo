@@ -11,6 +11,8 @@ app_version = "2.1.0"
 
 required_apps = ["erpnext"]
 
+fixtures = ["Workflow State", "Workflow"]
+
 after_install = "anyadha_pmo.install.after_install"
 after_migrate = "anyadha_pmo.install.after_migrate"
 
@@ -20,6 +22,9 @@ app_logo_url = "/assets/anyadha_pmo/images/anyadha-pmo-logo.svg"
 
 app_home = "/desk/executive-pmo"
 
+web_include_js = [
+    "/assets/anyadha_pmo/js/supplier_rfq_quotation.js"
+]
 add_to_apps_screen = [
     {
         "name": app_name,

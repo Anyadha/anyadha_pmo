@@ -59,6 +59,67 @@
       "fieldname": "description",
       "label": "Description",
       "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company"
+    },
+    {
+      "fieldname": "business_unit",
+      "fieldtype": "Link",
+      "label": "Business Unit",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "workflow_state",
+      "fieldtype": "Link",
+      "label": "Workflow State",
+      "options": "Workflow State",
+      "read_only": 1
+    },
+    {
+      "fieldname": "inherent_probability",
+      "fieldtype": "Select",
+      "label": "Inherent Probability",
+      "options": "Low\nMedium\nHigh\nCritical"
+    },
+    {
+      "fieldname": "inherent_impact",
+      "fieldtype": "Select",
+      "label": "Inherent Impact",
+      "options": "Low\nMedium\nHigh\nCritical"
+    },
+    {
+      "fieldname": "residual_probability",
+      "fieldtype": "Select",
+      "label": "Residual Probability",
+      "options": "Low\nMedium\nHigh\nCritical"
+    },
+    {
+      "fieldname": "residual_impact",
+      "fieldtype": "Select",
+      "label": "Residual Impact",
+      "options": "Low\nMedium\nHigh\nCritical"
+    },
+    {
+      "fieldname": "risk_response",
+      "fieldtype": "Select",
+      "label": "Risk Response",
+      "options": "Avoid\nReduce\nTransfer\nAccept"
+    },
+    {
+      "fieldname": "risk_appetite_status",
+      "fieldtype": "Select",
+      "label": "Risk Appetite Status",
+      "options": "Within Appetite\nOutside Appetite\nNot Assessed"
+    },
+    {
+      "fieldname": "treatment_plan",
+      "fieldtype": "Link",
+      "label": "Current Treatment",
+      "options": "PMO Risk Treatment"
     }
   ],
   "permissions": [
@@ -117,5 +178,6 @@
       "export": 1,
       "share": 1
     }
-  ]
+  ],
+  "modified": "2026-09-17 23:12:00.000000"
 }

@@ -8,11 +8,19 @@
   "field_order": [
     "general_section",
     "enable_pmo",
+    "settings_version",
+    "effective_from",
+    "effective_to",
+    "default_timezone",
+    "default_escalation_role",
+    "require_evidence_for_approval",
+    "allow_admin_override",
+    "audit_retention_days",
+    "dashboard_refresh_minutes",
     "default_company",
     "default_pmo_entity",
     "default_business_unit",
     "default_project_type",
-    "default_workspace",
     "defaults_section",
     "default_fiscal_year",
     "default_currency",
@@ -37,17 +45,18 @@
     "enforce_entity_restrictions",
     "require_sensitive_record_approval",
     "enable_maker_checker",
+    "reporting_section",
+    "enable_executive_dashboard",
+    "enable_management_dashboard",
+    "default_reporting_frequency",
+    "default_workspace",
     "integration_section",
     "enable_email_alerts",
     "enable_assignment_rules",
     "enable_auto_repeat",
     "enable_document_sharing",
     "enable_activity_logging",
-    "enable_versioning",
-    "reporting_section",
-    "enable_executive_dashboard",
-    "enable_management_dashboard",
-    "default_reporting_frequency"
+    "enable_versioning"
   ],
   "fields": [
     {
@@ -60,6 +69,59 @@
       "fieldname": "enable_pmo",
       "fieldtype": "Check",
       "label": "Enable PMO"
+    },
+    {
+      "fieldname": "settings_version",
+      "fieldtype": "Data",
+      "label": "Settings Version",
+      "default": "2.0",
+      "read_only": 1
+    },
+    {
+      "fieldname": "effective_from",
+      "fieldtype": "Date",
+      "label": "Effective From"
+    },
+    {
+      "fieldname": "effective_to",
+      "fieldtype": "Date",
+      "label": "Effective To"
+    },
+    {
+      "fieldname": "default_timezone",
+      "fieldtype": "Data",
+      "label": "Default Timezone",
+      "default": "Asia/Kolkata"
+    },
+    {
+      "fieldname": "default_escalation_role",
+      "fieldtype": "Link",
+      "label": "Default Escalation Role",
+      "options": "Role"
+    },
+    {
+      "fieldname": "require_evidence_for_approval",
+      "fieldtype": "Check",
+      "label": "Require Evidence for Approval",
+      "default": 1
+    },
+    {
+      "fieldname": "allow_admin_override",
+      "fieldtype": "Check",
+      "label": "Allow Admin Override",
+      "default": 0
+    },
+    {
+      "fieldname": "audit_retention_days",
+      "fieldtype": "Int",
+      "label": "Audit Retention Days",
+      "default": 2555
+    },
+    {
+      "fieldname": "dashboard_refresh_minutes",
+      "fieldtype": "Int",
+      "label": "Dashboard Refresh Minutes",
+      "default": 15
     },
     {
       "fieldname": "default_company",
@@ -301,20 +363,31 @@
   "name": "PMO Settings",
   "permissions": [
     {
+      "role": "PMO Administrator",
+      "read": 1,
+      "write": 1,
       "create": 1,
       "delete": 1,
+      "print": 1,
       "email": 1,
       "export": 1,
-      "print": 1,
+      "share": 1
+    },
+    {
+      "role": "PMO Head",
       "read": 1,
-      "role": "PMO Administrator",
-      "share": 1,
       "write": 1
     },
     {
+      "role": "System Manager",
       "read": 1,
       "write": 1,
-      "role": "PMO Head"
+      "create": 1,
+      "delete": 1,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 1
     }
   ],
   "sort_field": "modified",

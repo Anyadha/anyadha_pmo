@@ -109,6 +109,60 @@
       "fieldname": "description",
       "label": "Description",
       "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "entity",
+      "label": "PMO Entity",
+      "fieldtype": "Link",
+      "options": "PMO Entity"
+    },
+    {
+      "fieldname": "business_unit",
+      "label": "Business Unit",
+      "fieldtype": "Link",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "project_type_name",
+      "label": "Project Type Name",
+      "fieldtype": "Data",
+      "hidden": 1
+    },
+    {
+      "fieldname": "priority",
+      "label": "Priority",
+      "fieldtype": "Select",
+      "options": "Low\nMedium\nHigh\nCritical",
+      "default": "Medium"
+    },
+    {
+      "fieldname": "percent_complete",
+      "label": "Percent Complete",
+      "fieldtype": "Percent",
+      "default": "0"
+    },
+    {
+      "fieldname": "currency",
+      "label": "Currency",
+      "fieldtype": "Link",
+      "options": "Currency"
+    },
+    {
+      "fieldname": "approved_on",
+      "label": "Approved On",
+      "fieldtype": "Datetime"
+    },
+    {
+      "fieldname": "approved_by",
+      "label": "Approved By",
+      "fieldtype": "Link",
+      "options": "User"
+    },
+    {
+      "fieldname": "workflow_state",
+      "label": "Workflow State",
+      "fieldtype": "Data",
+      "read_only": 1
     }
   ],
   "permissions": [

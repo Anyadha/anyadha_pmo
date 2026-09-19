@@ -1,0 +1,45 @@
+{
+  "add_total_row": 0,
+  "add_translate_data": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "filters": [],
+  "idx": 0,
+  "is_standard": "Yes",
+  "module": "Performance MIS",
+  "name": "PMO Management MIS",
+  "owner": "Administrator",
+  "prepared_report": 0,
+  "query": "SELECT name AS \"Review:Link/PMO Management Review:180\", review_title AS \"Review Title:Data:260\", review_date AS \"Review Date:Date:120\", period AS \"Period:Data:120\", status AS \"Status:Data:120\", decision AS \"Decision:Data:140\", action_required AS \"Action Required:Check:120\" FROM `tabPMO Management Review` ORDER BY review_date DESC",
+  "ref_doctype": "PMO Management Review",
+  "report_name": "PMO Management MIS",
+  "report_type": "Query Report",
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Executive / Management"
+    },
+    {
+      "role": "M&E Manager"
+    },
+    {
+      "role": "M&E Officer"
+    },
+    {
+      "role": "Programme Manager"
+    },
+    {
+      "role": "Project Manager"
+    }
+  ],
+  "doctype": "Report"
+}

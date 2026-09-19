@@ -41,6 +41,58 @@
       "fieldname": "description",
       "label": "Description",
       "fieldtype": "Text Editor"
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company"
+    },
+    {
+      "fieldname": "business_unit",
+      "fieldtype": "Link",
+      "label": "Business Unit",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "workflow_state",
+      "fieldtype": "Link",
+      "label": "Workflow State",
+      "options": "Workflow State",
+      "read_only": 1
+    },
+    {
+      "fieldname": "control_objective",
+      "fieldtype": "Small Text",
+      "label": "Control Objective"
+    },
+    {
+      "fieldname": "control_owner",
+      "fieldtype": "Link",
+      "label": "Control Owner",
+      "options": "Employee"
+    },
+    {
+      "fieldname": "key_control",
+      "fieldtype": "Check",
+      "label": "Key Control"
+    },
+    {
+      "fieldname": "evidence_required",
+      "fieldtype": "Check",
+      "label": "Evidence Required"
+    },
+    {
+      "fieldname": "risk",
+      "fieldtype": "Link",
+      "label": "Risk",
+      "options": "PMO Enterprise Risk"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Draft\nActive\nInactive\nUnder Review"
     }
   ],
   "permissions": [
@@ -99,5 +151,6 @@
       "export": 1,
       "share": 1
     }
-  ]
+  ],
+  "modified": "2026-09-17 23:12:00.000000"
 }

@@ -1,0 +1,45 @@
+{
+  "add_total_row": 0,
+  "add_translate_data": 0,
+  "columns": [],
+  "disabled": 0,
+  "docstatus": 0,
+  "filters": [],
+  "idx": 0,
+  "is_standard": "Yes",
+  "module": "Performance MIS",
+  "name": "PMO Indicator Readings",
+  "owner": "Administrator",
+  "prepared_report": 0,
+  "query": "SELECT r.name AS \"Reading:Link/PMO Indicator Reading:180\", r.project AS \"Project:Link/PMO Project:180\", r.indicator AS \"Indicator:Link/PMO Indicator:200\", r.reading_date AS \"Reading Date:Date:120\", r.value AS \"Value:Float:110\", r.validation_status AS \"Validation:Data:110\" FROM `tabPMO Indicator Reading` r ORDER BY r.reading_date DESC",
+  "ref_doctype": "PMO Indicator Reading",
+  "report_name": "PMO Indicator Readings",
+  "report_type": "Query Report",
+  "roles": [
+    {
+      "role": "PMO Administrator"
+    },
+    {
+      "role": "PMO Head"
+    },
+    {
+      "role": "PMO Officer"
+    },
+    {
+      "role": "Executive / Management"
+    },
+    {
+      "role": "M&E Manager"
+    },
+    {
+      "role": "M&E Officer"
+    },
+    {
+      "role": "Programme Manager"
+    },
+    {
+      "role": "Project Manager"
+    }
+  ],
+  "doctype": "Report"
+}

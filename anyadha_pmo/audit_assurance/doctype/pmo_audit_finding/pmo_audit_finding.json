@@ -52,6 +52,56 @@
       "label": "Status",
       "fieldtype": "Select",
       "options": "Draft\nOpen\nIn Progress\nPending Approval\nApproved\nRejected\nCompleted\nClosed\nCancelled"
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company"
+    },
+    {
+      "fieldname": "business_unit",
+      "fieldtype": "Link",
+      "label": "Business Unit",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "risk_rating",
+      "fieldtype": "Select",
+      "label": "Risk Rating",
+      "options": "Low\nMedium\nHigh\nCritical"
+    },
+    {
+      "fieldname": "management_response",
+      "fieldtype": "Text Editor",
+      "label": "Management Response"
+    },
+    {
+      "fieldname": "root_cause",
+      "fieldtype": "Text Editor",
+      "label": "Root Cause"
+    },
+    {
+      "fieldname": "corrective_action",
+      "fieldtype": "Link",
+      "label": "Corrective Action",
+      "options": "PMO Corrective Action"
+    },
+    {
+      "fieldname": "evidence",
+      "fieldtype": "Attach",
+      "label": "Evidence"
+    },
+    {
+      "fieldname": "target_closure_date",
+      "fieldtype": "Date",
+      "label": "Target Closure Date"
+    },
+    {
+      "fieldname": "verified_by",
+      "fieldtype": "Link",
+      "label": "Verified By",
+      "options": "Employee"
     }
   ],
   "permissions": [
@@ -110,5 +160,6 @@
       "export": 1,
       "share": 1
     }
-  ]
+  ],
+  "modified": "2026-09-17 23:12:00.000000"
 }

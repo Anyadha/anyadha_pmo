@@ -37,6 +37,28 @@
       "label": "Status",
       "fieldtype": "Select",
       "options": "Draft\nOpen\nIn Progress\nPending Approval\nApproved\nRejected\nCompleted\nClosed\nCancelled"
+    },
+    {
+      "fieldname": "risk_response",
+      "fieldtype": "Select",
+      "label": "Risk Response",
+      "options": "Avoid\nReduce\nTransfer\nAccept"
+    },
+    {
+      "fieldname": "evidence",
+      "fieldtype": "Attach",
+      "label": "Evidence"
+    },
+    {
+      "fieldname": "completion_date",
+      "fieldtype": "Date",
+      "label": "Completion Date"
+    },
+    {
+      "fieldname": "effectiveness",
+      "fieldtype": "Select",
+      "label": "Effectiveness",
+      "options": "Not Assessed\nEffective\nPartially Effective\nIneffective"
     }
   ],
   "permissions": [
@@ -95,5 +117,6 @@
       "export": 1,
       "share": 1
     }
-  ]
+  ],
+  "modified": "2026-09-17 23:12:00.000000"
 }

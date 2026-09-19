@@ -32,6 +32,43 @@
       "fieldtype": "Currency"
     },
     {
+      "fieldname": "currency",
+      "label": "Currency",
+      "fieldtype": "Link",
+      "options": "Currency"
+    },
+    {
+      "fieldname": "minimum_approvals",
+      "label": "Minimum Approvals",
+      "fieldtype": "Int",
+      "default": 1
+    },
+    {
+      "fieldname": "parallel_approval",
+      "label": "Parallel Approval",
+      "fieldtype": "Check",
+      "default": 0
+    },
+    {
+      "fieldname": "required",
+      "label": "Required",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "condition_expression",
+      "label": "Condition Expression",
+      "fieldtype": "Code",
+      "options": "Python",
+      "description": "Controlled expression evaluated by the PMO authority service. Do not execute untrusted input."
+    },
+    {
+      "fieldname": "active",
+      "label": "Active",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
       "fieldname": "approver_role",
       "label": "Approver Role",
       "fieldtype": "Data",
@@ -51,7 +88,6 @@
       "create": 1,
       "delete": 0,
       "print": 1,
-      "email": 1,
       "export": 1,
       "share": 0
     },
@@ -62,29 +98,16 @@
       "create": 1,
       "delete": 0,
       "print": 1,
-      "email": 1,
       "export": 1,
       "share": 0
     },
     {
-      "role": "Executive / Management",
+      "role": "PMO Governance Manager",
       "read": 1,
       "write": 1,
       "create": 1,
       "delete": 0,
       "print": 1,
-      "email": 1,
-      "export": 1,
-      "share": 0
-    },
-    {
-      "role": "Board Member",
-      "read": 1,
-      "write": 1,
-      "create": 1,
-      "delete": 0,
-      "print": 1,
-      "email": 1,
       "export": 1,
       "share": 0
     },
@@ -95,9 +118,22 @@
       "create": 1,
       "delete": 1,
       "print": 1,
-      "email": 1,
       "export": 1,
       "share": 1
     }
+  ],
+  "field_order": [
+    "authority_matrix",
+    "transaction_type",
+    "threshold_from",
+    "threshold_to",
+    "currency",
+    "minimum_approvals",
+    "parallel_approval",
+    "required",
+    "condition_expression",
+    "active",
+    "approver_role",
+    "sequence"
   ]
 }

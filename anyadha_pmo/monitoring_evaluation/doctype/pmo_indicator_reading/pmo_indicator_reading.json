@@ -42,6 +42,46 @@
       "fieldname": "remarks",
       "label": "Remarks",
       "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company"
+    },
+    {
+      "fieldname": "entity",
+      "label": "Entity",
+      "fieldtype": "Link",
+      "options": "PMO Entity"
+    },
+    {
+      "fieldname": "business_unit",
+      "label": "Business Unit",
+      "fieldtype": "Link",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "source_reference",
+      "label": "Source Reference",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "validation_status",
+      "label": "Validation Status",
+      "fieldtype": "Select",
+      "options": "Draft\nSubmitted\nValidated\nRejected"
+    },
+    {
+      "fieldname": "validated_by",
+      "label": "Validated By",
+      "fieldtype": "Link",
+      "options": "User"
+    },
+    {
+      "fieldname": "validated_on",
+      "label": "Validated On",
+      "fieldtype": "Datetime"
     }
   ],
   "permissions": [

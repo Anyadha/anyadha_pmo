@@ -36,6 +36,51 @@
       "fieldname": "description",
       "label": "Description",
       "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "report_code",
+      "label": "Report Code",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company"
+    },
+    {
+      "fieldname": "entity",
+      "label": "Entity",
+      "fieldtype": "Link",
+      "options": "PMO Entity"
+    },
+    {
+      "fieldname": "business_unit",
+      "label": "Business Unit",
+      "fieldtype": "Link",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "report_source",
+      "label": "Report Source",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "delivery_method",
+      "label": "Delivery Method",
+      "fieldtype": "Select",
+      "options": "Dashboard\nEmail\nFile\nERPNext Report"
+    },
+    {
+      "fieldname": "active",
+      "label": "Active",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "last_generated_on",
+      "label": "Last Generated On",
+      "fieldtype": "Datetime"
     }
   ],
   "permissions": [

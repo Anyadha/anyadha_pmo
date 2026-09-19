@@ -36,6 +36,40 @@
       "label": "Project",
       "fieldtype": "Link",
       "options": "PMO Project"
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company"
+    },
+    {
+      "fieldname": "business_unit",
+      "label": "Business Unit",
+      "fieldtype": "Link",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "period_start",
+      "label": "Period Start",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "period_end",
+      "label": "Period End",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "direction",
+      "label": "Performance Direction",
+      "fieldtype": "Select",
+      "options": "Higher is Better\nLower is Better\nTarget Range"
+    },
+    {
+      "fieldname": "active",
+      "label": "Active",
+      "fieldtype": "Check",
+      "default": 1
     }
   ],
   "permissions": [

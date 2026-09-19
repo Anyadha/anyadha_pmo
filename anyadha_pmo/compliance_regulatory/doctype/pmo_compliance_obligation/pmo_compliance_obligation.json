@@ -41,6 +41,51 @@
       "label": "Status",
       "fieldtype": "Select",
       "options": "Draft\nOpen\nIn Progress\nPending Approval\nApproved\nRejected\nCompleted\nClosed\nCancelled"
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company"
+    },
+    {
+      "fieldname": "business_unit",
+      "fieldtype": "Link",
+      "label": "Business Unit",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "obligation_owner",
+      "fieldtype": "Link",
+      "label": "Obligation Owner",
+      "options": "Employee"
+    },
+    {
+      "fieldname": "authority_source",
+      "fieldtype": "Data",
+      "label": "Authority / Source"
+    },
+    {
+      "fieldname": "effective_from",
+      "fieldtype": "Date",
+      "label": "Effective From"
+    },
+    {
+      "fieldname": "effective_to",
+      "fieldtype": "Date",
+      "label": "Effective To"
+    },
+    {
+      "fieldname": "frequency",
+      "fieldtype": "Select",
+      "label": "Frequency",
+      "options": "One Time\nMonthly\nQuarterly\nHalf Yearly\nAnnual"
+    },
+    {
+      "fieldname": "criticality",
+      "fieldtype": "Select",
+      "label": "Criticality",
+      "options": "Low\nMedium\nHigh\nCritical"
     }
   ],
   "permissions": [
@@ -99,5 +144,6 @@
       "export": 1,
       "share": 1
     }
-  ]
+  ],
+  "modified": "2026-09-17 23:12:00.000000"
 }

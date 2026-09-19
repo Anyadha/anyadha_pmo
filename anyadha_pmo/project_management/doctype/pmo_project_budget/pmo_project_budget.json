@@ -40,6 +40,18 @@
       "fieldname": "variance",
       "label": "Variance",
       "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "currency",
+      "label": "Currency",
+      "fieldtype": "Link",
+      "options": "Currency"
+    },
+    {
+      "fieldname": "variance_percent",
+      "label": "Variance %",
+      "fieldtype": "Percent",
+      "read_only": 1
     }
   ],
   "permissions": [

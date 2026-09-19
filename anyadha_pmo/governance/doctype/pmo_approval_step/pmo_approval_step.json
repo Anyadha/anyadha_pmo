@@ -22,6 +22,54 @@
       "options": "User"
     },
     {
+      "fieldname": "approver_role",
+      "label": "Approver Role",
+      "fieldtype": "Link",
+      "options": "Role"
+    },
+    {
+      "fieldname": "due_on",
+      "label": "Due On",
+      "fieldtype": "Datetime"
+    },
+    {
+      "fieldname": "evidence_required",
+      "label": "Evidence Required",
+      "fieldtype": "Check",
+      "default": 0
+    },
+    {
+      "fieldname": "evidence_complete",
+      "label": "Evidence Complete",
+      "fieldtype": "Check",
+      "default": 0
+    },
+    {
+      "fieldname": "delegated_to",
+      "label": "Delegated To",
+      "fieldtype": "Link",
+      "options": "User"
+    },
+    {
+      "fieldname": "delegation_reference",
+      "label": "Delegation Reference",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "sod_check_status",
+      "label": "SoD Check Status",
+      "fieldtype": "Select",
+      "options": "Not Checked\nPassed\nFailed\nOverridden",
+      "default": "Not Checked",
+      "read_only": 1
+    },
+    {
+      "fieldname": "sod_check_message",
+      "label": "SoD Check Message",
+      "fieldtype": "Small Text",
+      "read_only": 1
+    },
+    {
       "fieldname": "sequence",
       "label": "Sequence",
       "fieldtype": "Int"
@@ -67,7 +115,7 @@
       "share": 0
     },
     {
-      "role": "Executive / Management",
+      "role": "PMO Officer",
       "read": 1,
       "write": 1,
       "create": 1,
@@ -78,7 +126,7 @@
       "share": 0
     },
     {
-      "role": "Board Member",
+      "role": "PMO Governance Manager",
       "read": 1,
       "write": 1,
       "create": 1,
@@ -87,6 +135,16 @@
       "email": 1,
       "export": 1,
       "share": 0
+    },
+    {
+      "role": "Executive / Management",
+      "read": 1,
+      "print": 1
+    },
+    {
+      "role": "Board Member",
+      "read": 1,
+      "print": 1
     },
     {
       "role": "System Manager",
@@ -99,5 +157,21 @@
       "export": 1,
       "share": 1
     }
+  ],
+  "field_order": [
+    "approval_request",
+    "approver",
+    "approver_role",
+    "due_on",
+    "evidence_required",
+    "evidence_complete",
+    "delegated_to",
+    "delegation_reference",
+    "sod_check_status",
+    "sod_check_message",
+    "sequence",
+    "decision",
+    "decision_on",
+    "remarks"
   ]
 }

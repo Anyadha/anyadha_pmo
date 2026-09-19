@@ -41,6 +41,33 @@
       "fieldname": "remarks",
       "label": "Remarks",
       "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "test_type",
+      "fieldtype": "Select",
+      "label": "Test Type",
+      "options": "Design\nOperating Effectiveness\nBoth"
+    },
+    {
+      "fieldname": "sample_size",
+      "fieldtype": "Int",
+      "label": "Sample Size"
+    },
+    {
+      "fieldname": "exceptions_count",
+      "fieldtype": "Int",
+      "label": "Exceptions Count"
+    },
+    {
+      "fieldname": "evidence_required",
+      "fieldtype": "Check",
+      "label": "Evidence Required"
+    },
+    {
+      "fieldname": "test_conclusion",
+      "fieldtype": "Select",
+      "label": "Test Conclusion",
+      "options": "Pass\nPass with Exceptions\nFail\nNot Conclusive"
     }
   ],
   "permissions": [
@@ -99,5 +126,6 @@
       "export": 1,
       "share": 1
     }
-  ]
+  ],
+  "modified": "2026-09-17 23:12:00.000000"
 }

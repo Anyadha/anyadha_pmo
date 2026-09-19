@@ -35,6 +35,39 @@
       "label": "Status",
       "fieldtype": "Select",
       "options": "Green\nAmber\nRed"
+    },
+    {
+      "fieldname": "owner",
+      "label": "KCI Owner",
+      "fieldtype": "Link",
+      "options": "Employee"
+    },
+    {
+      "fieldname": "direction",
+      "label": "Threshold Direction",
+      "fieldtype": "Select",
+      "options": "Higher is Worse\nLower is Worse\nRange"
+    },
+    {
+      "fieldname": "unit",
+      "label": "Unit",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "measurement_date",
+      "label": "Measurement Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "evidence",
+      "label": "Evidence",
+      "fieldtype": "Attach"
+    },
+    {
+      "fieldname": "active",
+      "label": "Active",
+      "fieldtype": "Check",
+      "default": 1
     }
   ],
   "permissions": [

@@ -31,6 +31,35 @@
       "fieldname": "next_monitoring_date",
       "label": "Next Monitoring Date",
       "fieldtype": "Date"
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company"
+    },
+    {
+      "fieldname": "entity",
+      "label": "Entity",
+      "fieldtype": "Link",
+      "options": "PMO Entity"
+    },
+    {
+      "fieldname": "business_unit",
+      "label": "Business Unit",
+      "fieldtype": "Link",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "Draft\nActive\nCompleted\nCancelled"
+    },
+    {
+      "fieldname": "last_monitoring_date",
+      "label": "Last Monitoring Date",
+      "fieldtype": "Date"
     }
   ],
   "permissions": [

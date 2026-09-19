@@ -41,6 +41,57 @@
       "fieldname": "review_date",
       "label": "Review Date",
       "fieldtype": "Date"
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company"
+    },
+    {
+      "fieldname": "business_unit",
+      "fieldtype": "Link",
+      "label": "Business Unit",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "document_code",
+      "fieldtype": "Data",
+      "label": "Document Code"
+    },
+    {
+      "fieldname": "document_owner",
+      "fieldtype": "Link",
+      "label": "Document Owner",
+      "options": "Employee"
+    },
+    {
+      "fieldname": "effective_from",
+      "fieldtype": "Date",
+      "label": "Effective From"
+    },
+    {
+      "fieldname": "next_review_date",
+      "fieldtype": "Date",
+      "label": "Next Review Date"
+    },
+    {
+      "fieldname": "supersedes_document",
+      "fieldtype": "Link",
+      "label": "Supersedes Document",
+      "options": "PMO Document Control"
+    },
+    {
+      "fieldname": "evidence",
+      "fieldtype": "Attach",
+      "label": "Approved Document"
+    },
+    {
+      "fieldname": "workflow_state",
+      "fieldtype": "Link",
+      "label": "Workflow State",
+      "options": "Workflow State",
+      "read_only": 1
     }
   ],
   "permissions": [
@@ -99,5 +150,6 @@
       "export": 1,
       "share": 1
     }
-  ]
+  ],
+  "modified": "2026-09-17 23:12:00.000000"
 }

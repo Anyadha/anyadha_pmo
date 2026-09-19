@@ -31,6 +31,67 @@
       "label": "Status",
       "fieldtype": "Select",
       "options": "Draft\nOpen\nIn Progress\nPending Approval\nApproved\nRejected\nCompleted\nClosed\nCancelled"
+    },
+    {
+      "fieldname": "company",
+      "label": "Company",
+      "fieldtype": "Link",
+      "options": "Company"
+    },
+    {
+      "fieldname": "entity",
+      "label": "PMO Entity",
+      "fieldtype": "Link",
+      "options": "PMO Entity"
+    },
+    {
+      "fieldname": "business_unit",
+      "label": "Business Unit",
+      "fieldtype": "Link",
+      "options": "PMO Business Unit"
+    },
+    {
+      "fieldname": "portfolio_code",
+      "label": "Portfolio Code",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "portfolio_type",
+      "label": "Portfolio Type",
+      "fieldtype": "Select",
+      "options": "Strategic\nOperational\nInvestment\nTransformation\nOther"
+    },
+    {
+      "fieldname": "description",
+      "label": "Description",
+      "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "start_date",
+      "label": "Start Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "end_date",
+      "label": "End Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "approved_budget",
+      "label": "Approved Budget",
+      "fieldtype": "Currency"
+    },
+    {
+      "fieldname": "currency",
+      "label": "Currency",
+      "fieldtype": "Link",
+      "options": "Currency"
+    },
+    {
+      "fieldname": "workflow_state",
+      "label": "Workflow State",
+      "fieldtype": "Data",
+      "read_only": 1
     }
   ],
   "permissions": [
@@ -88,6 +149,17 @@
       "email": 1,
       "export": 1,
       "share": 1
+    },
+    {
+      "role": "PMO Officer",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 0,
+      "print": 1,
+      "email": 1,
+      "export": 1,
+      "share": 0
     }
   ]
 }

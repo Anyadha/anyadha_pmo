@@ -40,6 +40,40 @@
       "fieldname": "remarks",
       "label": "Remarks",
       "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "inherent_probability",
+      "fieldtype": "Select",
+      "label": "Inherent Probability",
+      "options": "Low\nMedium\nHigh\nCritical"
+    },
+    {
+      "fieldname": "inherent_impact",
+      "fieldtype": "Select",
+      "label": "Inherent Impact",
+      "options": "Low\nMedium\nHigh\nCritical"
+    },
+    {
+      "fieldname": "residual_probability",
+      "fieldtype": "Select",
+      "label": "Residual Probability",
+      "options": "Low\nMedium\nHigh\nCritical"
+    },
+    {
+      "fieldname": "residual_impact",
+      "fieldtype": "Select",
+      "label": "Residual Impact",
+      "options": "Low\nMedium\nHigh\nCritical"
+    },
+    {
+      "fieldname": "is_current",
+      "fieldtype": "Check",
+      "label": "Current Assessment"
+    },
+    {
+      "fieldname": "evidence",
+      "fieldtype": "Attach",
+      "label": "Evidence"
     }
   ],
   "permissions": [
@@ -98,5 +132,6 @@
       "export": 1,
       "share": 1
     }
-  ]
+  ],
+  "modified": "2026-09-17 23:12:00.000000"
 }
