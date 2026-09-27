@@ -1,0 +1,14 @@
+{
+  "background_color": "#6dac46",
+  "dir": "auto",
+  "display": "standalone",
+  "name": "Anyadha",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "Anyadha",
+  "start_url": "/app",
+  "theme_color": "#114a97",
+  "id": "Anyadha",
+  "description": "Anyadha ERP",
+  "lang": "en"
+}
