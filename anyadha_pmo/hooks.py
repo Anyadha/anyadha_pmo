@@ -35,6 +35,11 @@ add_to_apps_screen = [
     }
 ]
 
+app_include_js = [
+    "/assets/anyadha_pmo/js/documentation_visibility.js"
+]
+
+extend_bootinfo = "anyadha_pmo.bootinfo.extend_bootinfo"
 before_request = [
     "anyadha_pmo.overrides.purchase_order.apply",
 ]
@@ -42,3 +47,20 @@ before_request = [
 override_doctype_class = {
     "Purchase Order": "anyadha_pmo.overrides.purchase_order.CustomPurchaseOrder",
 }
+##
+##
+##import frappe
+##import erpnext
+##import india_compliance
+##
+##ALLOWED_ROLES = {"System Manager", "Accounts Manager"}  # adjust to taste
+##
+##
+##def _restricted_app_permission():
+##    if frappe.session.user == "Administrator":
+##        return True
+##    return bool(ALLOWED_ROLES & set(frappe.get_roles()))
+##
+##
+##erpnext.check_app_permission = _restricted_app_permission
+##india_compliance.check_app_permission = _restricted_app_permission
